@@ -1,5 +1,6 @@
 - **Tổng quan Nghiên cứu**
-  - [📊 Dashboard So sánh](competitors/00-tong-quan-so-sanh.md)
+  - [📖 6 Hình thức Ký Bệnh nhân Thực tế](competitors/00-cac-hinh-thuc-ky-thuc-te.md)
+  - [📊 Dashboard So sánh Đối thủ](competitors/00-tong-quan-so-sanh.md)
   - [📋 Mục lục & Dữ liệu](competitors/00-INDEX.md)
 
 - **Sản phẩm của chúng ta**
@@ -12,4 +13,3 @@
   - [🌐 VNPT HIS & SmartCA](competitors/05-vnpt-his.md)
   - [📩 FPT eHospital (OTP SMS & VNeID)](competitors/06-fpt-ehospital.md)
   - [✍️ Ký tay Tablet (DentalFlow...)](competitors/07-ky-tay-tablet.md)
-
