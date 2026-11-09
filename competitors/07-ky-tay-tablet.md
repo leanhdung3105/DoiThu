@@ -1,7 +1,7 @@
 ---
 title: "Mô hình Ký tay trên Tablet Cảm ứng (DentalFlow & HIS Phòng khám)"
 vendor: "DentalFlow, BambuFit, Nanosoft, LinkCare và nhiều HIS nội bộ"
-product: "Tính năng Ký cảm ứng trên iPad / Tablet / Wacom"
+product: "Tính năng Ký cảm ứng trên iPad / Tablet / Bảng vẽ Wacom"
 signing_method: "Vẽ chữ ký bằng tay/bút stylus trên màn hình cảm ứng"
 tt13_category: "Hình thức 3 (Phương tiện điện tử khác — Cấp thấp nhất)"
 legal_standing: "Rất yếu (Dễ bị Tòa án bác bỏ khi tranh chấp)"
@@ -16,7 +16,7 @@ role: "Mô hình phổ biến nhất cần thuyết phục chuyển đổi sang 
 
 ---
 
-## 1. Bản chất Kỹ thuật: "Chỉ là một bức ảnh vẽ"
+## 1. Cơ chế Hoạt động: "Bản chất chỉ là một bức ảnh vẽ"
 
 ```
 [Bệnh nhân vẽ chữ ký lên màn hình Tablet]
@@ -38,22 +38,28 @@ role: "Mô hình phổ biến nhất cần thuyết phục chuyển đổi sang 
 
 ---
 
-## 2. Rủi ro Pháp lý khi Kiện tụng Y khoa
+## 2. Vì sao Viện Khoa học Hình sự KHÔNG THỂ Giám định Chữ ký trên Kính?
 
-- **Cơ quan giám định không thể kết luận:** Theo Viện Khoa học Hình sự (Bộ Công An), việc giám định chữ ký truyền thống dựa trên: **lực tì đè cơ học, thớ giấy xé, độ đậm nhạt của mực, điểm dừng bút**. Nét vẽ trên mặt kính cảm ứng điện dung **hoàn toàn mất đi các thuộc tính này**.
-- **Dễ bị người bệnh chối bỏ:** Khi xảy ra tai biến y khoa, bệnh nhân/người nhà chỉ cần tuyên bố: *"Tôi chưa từng ký vào bản này. Nét vẽ nguệch ngoạc trên màn hình là do nhân viên y tế tự vẽ sau khi xảy ra sự cố"*. Bệnh viện hoàn toàn mất quyền tự vệ trước Tòa.
+Trong lĩnh vực y tế, tranh chấp thường xảy ra khi có tai biến hoặc kết quả điều trị không như mong đợi (ví dụ: cấy Implant bị đào thải, phẫu thuật thẩm mỹ hỏng, sốc phản vệ thuốc).
+
+Khi bệnh nhân khởi kiện ra Tòa án và tuyên bố: *"Tôi chưa từng ký vào bản cam kết này. Nét vẽ nguệch ngoạc trên màn hình iPad đó là do nhân viên phòng khám tự vẽ lên để chối bỏ trách nhiệm!"*.
+
+**Tòa án trưng cầu giám định chữ ký:**
+- Theo quy chuẩn giám định chữ ký của **Viện Khoa học Hình sự (Bộ Công An)**, giám định viên dựa vào các yếu tố vật lý gồm:
+  + Lực tì đè cơ học tạo độ lún trên thớ giấy.
+  + Chiều hướng ngòi bút xé rách sợi cellulose của giấy.
+  + Độ đậm nhạt của dòng mực và điểm dừng bút.
+  + Phản xạ co bóp cơ tay vô thức của người ký.
+- **Nét vẽ trên màn hình kính cảm ứng điện dung (Capacitive Screen) HOÀN TOÀN MẤT ĐI các thuộc tính này**.
+- **Kết luận của cơ quan giám định:** Không đủ cơ sở khoa học để xác định nét vẽ trên màn hình kính có phải do chính người đó vẽ hay không.
+- **Hậu quả:** Tòa án tuyên bố văn bản vô hiệu, cơ sở y tế chịu toàn bộ trách nhiệm bồi thường thiệt hại và mất uy tín thương hiệu.
 
 ---
 
-## 3. Vì sao các Cơ sở Y tế vẫn chuộng dùng?
+## 3. Kịch bản Bán hàng Thực chiến khi Thuyết phục Bệnh viện Chuyển đổi
 
-- ✅ **Rất rẻ & dễ tích hợp:** Lập trình viên chỉ cần vài dòng mã HTML5 Canvas là xong.
-- ✅ **Bệnh nhân quen thuộc:** Không cần giải thích nhiều, thao tác nhanh như ký giấy.
+Khi EasyCA tiếp cận các Bệnh viện tư nhân, Bệnh viện quốc tế, Bệnh viện thẩm mỹ, Chuỗi nha khoa lớn đang dùng hình thức Ký tay Tablet:
 
----
-
-## 4. Kịch bản EasyCA Thuyết phục Bệnh viện Chuyển đổi sang PKI
-
-> *"Ban Giám đốc đang đầu tư hàng chục tỷ đồng cho uy tín và thương hiệu, nhưng lại giao tính mạng pháp lý của Bệnh viện vào một nét vẽ nguệch ngoạc trên màn hình iPad. Khi xảy ra tranh chấp phẫu thuật, nét vẽ đó hoàn toàn không bảo vệ được Bác sĩ.  
-> **EasyCA nâng cấp quy trình này thành Chuẩn PKI:** Bệnh nhân vẫn ký trên tablet, nhưng đằng sau là công nghệ mã hóa PKI niêm phong tài liệu, đảm bảo giá trị pháp lý tuyệt đối theo Thông tư 13/2025/TT-BYT."*
-
+> **Đòn bẩy tư vấn "sát thương cao":**  
+> *"Ban Giám đốc đang đầu tư hàng chục tỷ đồng cho cơ sở vật chất và thương hiệu, nhưng lại giao tính mạng pháp lý của Bệnh viện vào một nét vẽ nguệch ngoạc trên màn hình iPad. Khi xảy ra một ca tai biến phẫu thuật hay khiếu nại viện phí lớn, nét vẽ đó hoàn toàn không bảo vệ được Bác sĩ trước Tòa án.  
+> **EasyCA nâng cấp toàn bộ quy trình này thành Chuẩn PKI Quốc tế:** Bệnh nhân vẫn ký trên tablet, nhưng đằng sau là công nghệ mã hóa PKI niêm phong tài liệu, đảm bảo hồ sơ có giá trị pháp lý tuyệt đối theo Thông tư 13/2025/TT-BYT."*

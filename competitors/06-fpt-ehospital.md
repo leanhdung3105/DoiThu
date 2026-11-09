@@ -16,34 +16,31 @@ FPT tiếp cận giải pháp ký số y tế thông qua **FPT eHospital (phần
 
 ---
 
-## 1. Phương thức Ký Bệnh nhân
+## 1. Cơ chế Hoạt động 2 Phương thức Ký Bệnh nhân của FPT
 
-1. **Xác thực qua OTP SMS / Zalo (Phổ biến):**
-   - Khi cần ký phiếu cam kết, hệ thống gửi mã xác thực OTP 6 số về số điện thoại của bệnh nhân.
-   - Bệnh nhân nhập OTP trên tablet tại quầy hoặc máy tính để hoàn tất xác nhận.
-2. **Ký qua ứng dụng VNeID:** Tích hợp cổng định danh của Bộ Công An tương tự các bên khác.
+### Cách 1: Xác thực qua mã OTP SMS / Zalo ZNS (Phổ biến nhất)
+```
+[Bác sĩ tạo phiếu trên eHospital] ──► [Hệ thống bắn mã OTP 6 số về SMS/Zalo]
+                                                    │
+                                                    ▼
+[Bệnh nhân đọc mã trên điện thoại] ──► [Nhập mã vào màn hình Tablet quầy] ──► [Xác nhận]
+```
 
----
+### 3 Lỗ hổng Cốt tử của Phương thức OTP SMS:
+1. **Không chứng minh được ai là người bấm mã:** OTP chỉ chứng minh chiếc SIM đó nhận được tin nhắn. Bệnh nhân có thể chối bỏ trước Tòa: *"Tôi đang cấp cứu, người nhà hoặc điều dưỡng tự cầm máy bấm mã, tôi không đồng ý phẫu thuật"*.
+2. **Tốn chi phí viễn thông cho Viện:** Bệnh viện phải chi trả 300 - 500 đồng/tin nhắn SMS Brandname. Chi phí này tích lũy hàng tháng lên đến hàng chục triệu đồng.
+3. **Nghẽn sóng trong bệnh viện:** Các khu vực nhạy cảm như phòng mổ, phòng cấp cứu, tầng hầm, phòng chụp X-quang/MRI thường xuyên bị chắn sóng viễn thông, mã OTP bị trễ 5 - 10 phút gây ách tắc ca phẫu thuật.
 
-## 2. Giá trị Pháp lý (Thông tư 13/2025/TT-BYT)
-
-- **Phân loại TT 13:** **Hình thức 3** (Phương tiện điện tử khác).
-- **Rủi ro phương thức OTP:**
-  + **Không chứng minh được người ký:** OTP chỉ chứng minh SIM nhận được tin nhắn, không chứng minh được người cầm máy là ai (người nhà cầm hộ, cho mượn máy).
-  + **Tốn chi phí viễn thông:** Bệnh viện phải chịu phí SMS Brandname (300 - 500đ/SMS).
-  + **Sóng viễn thông chập chờn:** Tại phòng phẫu thuật, phòng chụp X-quang hoặc tầng hầm, tin nhắn OTP thường xuyên bị trễ.
-
----
-
-## 3. Điểm mạnh
-
-- ✅ **Thương hiệu CNTT uy tín:** FPT có năng lực triển khai các dự án bệnh viện thông minh phức tạp.
-- ✅ **Phù hợp bệnh viện tư:** Giao diện hiện đại, dễ sử dụng cho các bệnh viện quốc tế/tư nhân.
+### Cách 2: Ký qua App VNeID
+- FPT eHospital tích hợp cổng định danh Bộ Công An, tương tự ISOFH và Viettel, gặp rào cản với người già và ca cấp cứu không có smartphone.
 
 ---
 
-## 4. Điểm yếu so với EasyCA PKI
+## 2. Kịch bản Bán hàng Thực chiến khi Bệnh viện đang Dùng FPT eHospital
 
-- ❌ **OTP không có tính toàn vẹn (Integrity):** Không khóa cứng nội dung file PDF; nếu dữ liệu viện phí bị sửa, OTP không phát hiện được.
-- ❌ **Chưa triển khai PKI cho bệnh nhân:** Dù có FPT-CA, nhưng FPT chưa đóng gói giải pháp cấp chứng thư số tức thì tại quầy cho bệnh nhân.
+Khi tiếp cận các bệnh viện tư nhân hoặc bệnh viện tỉnh đang dùng FPT eHospital:
 
+- **Đòn bẩy 1 — Cắt giảm chi phí SMS Brandname:**
+  - *"Hiện tại bệnh viện đang tốn hàng trăm triệu đồng mỗi năm chỉ để gửi tin nhắn OTP cho bệnh nhân xác nhận. EasyCA ứng dụng xác thực eKYC sinh trắc học và Private Key trên Cloud HSM, hoàn toàn không phụ thuộc vào tin nhắn SMS, giúp viện tiết kiệm toàn bộ chi phí viễn thông này."*
+- **Đòn bẩy 2 — Nâng cấp từ Hình thức 3 lên Hình thức 1:**
+  - *"Xác thực bằng OTP chỉ được xếp vào Hình thức 3 (thấp nhất theo Thông tư 13/2025). OTP không khóa được nội dung file PDF. EasyCA nâng cấp hồ sơ bệnh án của viện lên chuẩn Hình thức 1 (CKS PKI có mã hóa SHA-256), đảm bảo tính toàn vẹn và giá trị chứng cứ cao nhất."*
