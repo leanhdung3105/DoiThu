@@ -1,83 +1,62 @@
-# Nghiên cứu Đối thủ: Chữ ký số Bệnh nhân tại Bệnh viện
+# Nghiên cứu Đối thủ: Các Phương thức Ký Bệnh nhân tại Cơ sở Y tế
 > **Đơn vị nghiên cứu:** Ban Giải pháp EasyCA — SoftDreams  
-> **Khung pháp lý tham chiếu:** Luật Giao dịch điện tử 2023, Luật Khám bệnh, chữa bệnh 2023, **Thông tư 13/2025/TT-BYT (Điều 3)**.
+> **Khung pháp lý tham chiếu:** Luật Giao dịch điện tử số 20/2023/QH15, Nghị định số 23/2025/NĐ-CP, Luật Khám bệnh, chữa bệnh số 15/2023/QH15 và **Thông tư số 13/2025/TT-BYT (Điều 3)**.
 
 ---
 
-## 🧭 BỨC TRANH TOÀN CẢNH & KHUNG PHÁP LÝ TT 13/2025/TT-BYT
+## 🧭 KHUNG PHÁP LÝ THAM CHIẾU: THÔNG TƯ 13/2025/TT-BYT (ĐIỀU 3)
 
-Khi bệnh nhân hoặc người nhà đến khám chữa bệnh, họ phải ký xác nhận rất nhiều loại văn bản có rủi ro pháp lý cao: **Phiếu đồng ý phẫu thuật/thủ thuật, Cam kết sử dụng thuốc ngoài danh mục BHYT, Giấy từ chối điều trị, Bảng kê chi phí viện phí...**
-
-Theo **Điều 3 Thông tư 13/2025/TT-BYT** của Bộ Y tế về hồ sơ bệnh án điện tử, chữ ký/xác nhận của người bệnh được chấp nhận theo 3 cấp độ:
+Trong hồ sơ bệnh án điện tử (EMR), chữ ký hoặc xác nhận điện tử của người bệnh (hoặc người đại diện hợp pháp) được Bộ Y tế quy định thực hiện linh hoạt theo **3 nhóm phương thức**:
 
 ```
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│  HÌNH THỨC 1: Chữ ký điện tử hợp pháp (CKS chuẩn PKI do CA cấp phép) ➔ Cao nhất        │
-│  HÌNH THỨC 2: Kỹ thuật sinh trắc học (Dấu vân tay, nhận diện khuôn mặt) ➔ Trung bình   │
-│  HÌNH THỨC 3: Phương tiện điện tử khác (Ký tablet cảm ứng, OTP, VNeID) ➔ Cơ bản       │
+│  NHÓM 1: Sử dụng chữ ký điện tử hợp pháp (bao gồm chữ ký số của cá nhân người bệnh     │
+│          theo quy định của pháp luật về giao dịch điện tử).                            │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│  NHÓM 2: Sử dụng các kỹ thuật sinh trắc học (như dấu vân tay, nhận diện khuôn mặt...). │
+├────────────────────────────────────────────────────────────────────────────────────────┤
+│  NHÓM 3: Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác theo quy định tại │
+│          khoản 4 Điều 22 Luật Giao dịch điện tử (như xác thực VNeID, OTP SMS,          │
+│          hoặc ký trực tiếp trên thiết bị cảm ứng / bảng ký tại cơ sở y tế).            │
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-> **Lưu ý pháp lý quan trọng:** Dù Thông tư 13/2025 chấp nhận cả 3 hình thức, nhưng khi xảy ra **tranh chấp tai biến y khoa tại Tòa án**, chỉ có **Hình thức 1 (CKS chuẩn PKI)** mới có giá trị chứng cứ điện tử nguyên bản chống chối bỏ tuyệt đối theo Luật Giao dịch điện tử 2023.
+> **Nguyên tắc đánh giá pháp lý:** Thông tư 13/2025/TT-BYT công nhận cả 3 nhóm phương thức bình đẳng theo quy định pháp luật chuyên ngành. Tuy nhiên, theo **Điều 11 Luật Giao dịch điện tử 2023**, giá trị chứng cứ của từng phương thức khi có tranh chấp sẽ được cơ quan tố tụng đánh giá dựa trên độ tin cậy của cách thức khởi tạo, lưu trữ, khả năng bảo đảm tính toàn vẹn và xác định chủ thể thực hiện.
 
 ---
 
-## 📊 BẢNG MA TRẬN SO SÁNH 7 GIẢI PHÁP TRÊN THỊ TRƯỜNG
+## 📊 BẢNG MA TRẬN SO SÁNH CÁC GIẢI PHÁP TRÊN THỊ TRƯỜNG
 
-| Đơn vị / Giải pháp | Phương thức ký bệnh nhân | Phân loại TT 13 | Chứng thư số PKI? | Chống chối bỏ | Bệnh nhân cần gì? | Bệnh viện đã dùng |
-|---|---|:---:|:---:|:---:|---|---|
-| **EasyCA (SoftDreams)** | **CKS chuẩn PKI (Cloud HSM)** | **Hình thức 1** | ✅ **Có (X.509)** | ✅✅ **Tuyệt đối** | CCCD tại quầy HOẶC Smartphone | Đang phát triển & mở rộng |
-| **2ID / 2Contract** | Quét chip CCCD (NFC) + Đối soát mặt | Hình thức 2 & 3 | ❌ Không | ✅ Rất tốt | Chỉ cần thẻ CCCD gắn chip | BV Từ Dũ, Thanh Nhàn, Ung Bướu HN |
-| **ISOFH (EMR)** | Đẩy thông báo ký qua App VNeID | Hình thức 3 | ❌ Không | ✅ Tốt | Smartphone + App VNeID mức 2 | BV Đa khoa Xanh Pôn |
-| **Viettel HMS** | Ký tay trên Tablet + VNeID | Hình thức 3 | ❌ Không | ❌ Rất yếu (Tablet) | Tablet của viện / Smartphone | Hàng trăm BV công lập tuyến tỉnh/huyện |
-| **VNPT HIS** | Ký qua VNeID + SmartCA | Hình thức 1 & 3 | ⚠️ Tiềm năng | ✅ Tốt (VNeID) | Smartphone có VNeID / SmartCA | BV ĐK Nông nghiệp, hệ thống VNPT HIS |
-| **FPT eHospital** | Ký OTP SMS & VNeID | Hình thức 3 | ❌ Không | ⚠️ Trung bình | Điện thoại nhận SMS / VNeID | Một số BV tư nhân & BV tỉnh |
-| **Ký tay Tablet (DentalFlow...)** | Vẽ ngón tay/stylus lên màn hình | Hình thức 3 | ❌ Không | ❌ Rất yếu | Ký trực tiếp trên tablet của viện | Phổ biến tại nha khoa, thẩm mỹ, BV tư |
-
----
-
-## 🔍 CHI TIẾT CƠ CHẾ HOẠT ĐỘNG 6 PHƯƠNG THỨC KÝ
-
-### 1. Ký tay trên Tablet cảm ứng (DentalFlow, Viettel HMS)
-- **Cơ chế:** Điều dưỡng đưa Tablet ➔ Bệnh nhân dùng bút/ngón tay vẽ lên màn hình ➔ Phần mềm chụp ảnh PNG dán vào PDF ➔ Lưu Database.
-- **Rủi ro:** Bản chất chỉ là file ảnh vẽ, không có mã hóa PKI, không khóa được nội dung file PDF. Viện Khoa học Hình sự không thể giám định nét vẽ trên kính cảm ứng.
-
-### 2. Lấy dấu Vân tay điện tử (HIS quầy tiếp đón)
-- **Cơ chế:** Quét ngón tay tại quầy ➔ Lưu chuỗi template đặc trưng vào Database.
-- **Rủi ro:** "Nhận diện người" chứ "Không khóa được văn bản". Không niêm phong được nội dung cam kết mổ.
-
-### 3. Xác thực mã OTP (FPT eHospital)
-- **Cơ chế:** Bắn mã OTP 6 số về SMS ➔ Bệnh nhân nhập mã xác nhận.
-- **Rủi ro:** Tốn phí SMS của viện; sóng chập chờn ở phòng mổ/tầng hầm; không chứng minh được ai là người bấm mã.
-
-### 4. Ký qua App VNeID (ISOFH tại BV Xanh Pôn)
-- **Cơ chế:** EMR gọi API đẩy Push Notification ➔ Bệnh nhân mở App VNeID xác thực FaceID/Passcode để ký.
-- **Rào cản:** Người già 70-80 tuổi, trẻ nhỏ, bệnh nhân cấp cứu không có smartphone/không nhớ pass thì chịu chết.
-
-### 5. Quét chip CCCD qua NFC (2ID tại BV Từ Dũ, Thanh Nhàn)
-- **Cơ chế:** Đặt CCCD chip lên đầu đọc NFC ➔ Camera chụp mặt đối soát C06 ➔ Bệnh nhân bấm "Đồng ý" ➔ Chữ ký số Bệnh viện ký niêm phong.
-- **Rào cản:** Không ký từ xa được khi người nhà ở xa; 2ID không phải là CA cấp chứng thư số cho bệnh nhân.
-
-### 6. CKS Chuẩn PKI cấp tức thì (EasyCA - SoftDreams)
-- **Cơ chế:** eKYC 30s ➔ Cấp Chứng thư số PKI cá nhân trên Cloud HSM FIPS 140-2 Level 3 ➔ Băm SHA-256 khóa cứng file PDF + Đóng dấu thời gian quốc gia TSA.
-- **Ưu thế tuyệt đối:** Đạt Hình thức 1 TT 13/2025/TT-BYT; chống chối bỏ hoàn hảo trước Tòa án; hỗ trợ đa kênh (tại quầy, tại giường, ký từ xa).
+| Đơn vị / Giải pháp | Phương thức ký bệnh nhân | Nhóm theo TT 13/2025 | Cơ chế Chứng minh Danh tính & Toàn vẹn | Khả năng Ký từ xa | Bệnh viện đã triển khai |
+|---|---|:---:|---|:---:|---|
+| **EasyCA (SoftDreams)** | **Chữ ký số PKI (Remote Signing)** | **Nhóm 1** | Cặp khóa Private/Public Key X.509 + Băm SHA-256 + Dấu thời gian TSA | ✅ Hỗ trợ qua luồng eKYC từ xa | Đang trong giai đoạn nghiên cứu & phát triển `[Chưa triển khai rộng]` |
+| **2ID / 2Contract** | Quét chip CCCD (NFC) + Đối soát khuôn mặt | Nhóm 2 & Nhóm 3 | Đối soát sinh trắc 1:1 với chip CCCD + Ký số niêm phong bằng CTS Bệnh viện | ❌ Phải có mặt áp thẻ tại quầy | BV Từ Dũ `[Đã xác minh]`, BV Thanh Nhàn, Ung Bướu HN `[Có nguồn tham khảo]` |
+| **ISOFH (EMR)** | Xác nhận qua Ứng dụng VNeID | Nhóm 3 | Xác thực qua tài khoản định danh điện tử Mức 2 của Bộ Công An (C06) | ⚠️ Được (nếu có smartphone và VNeID) | BV Đa khoa Xanh Pôn `[Đã xác minh]`, BV ĐK Nông nghiệp `[Có nguồn tham khảo]` |
+| **Viettel HMS** | Ký cảm ứng trên Tablet / VNeID | Nhóm 3 | Ghi nhận nét vẽ kèm nhật ký phiên làm việc; hoặc xác thực VNeID | ❌ Ký tablet phải ở viện | Khối cơ sở y tế công lập toàn quốc `[Đã xác minh qua cổng đấu thầu]` |
+| **VNPT HIS** | Ký qua VNeID / Tablet / SmartCA | Nhóm 3 (hoặc Nhóm 1) | Xác thực qua VNeID; hoặc cấp SmartCA (nếu người dùng có tài khoản) | ⚠️ Phụ thuộc phương thức | Hệ thống y tế cơ sở và bệnh viện tỉnh `[Đã xác minh qua cổng đấu thầu]` |
+| **FPT eHospital** | Xác thực qua mã OTP SMS / Zalo | Nhóm 3 | Ghi nhận số điện thoại tiếp nhận OTP và biên lai dịch vụ viễn thông | ⚠️ Gửi OTP qua mạng viễn thông | Bệnh viện tư nhân quy mô lớn và bệnh viện tỉnh `[Đã xác minh]` |
+| **Ký tay Tablet (DentalFlow...)** | Vẽ chữ ký trên màn hình cảm ứng | Nhóm 3 | Lưu ảnh nét vẽ; một số hệ thống lưu kèm tọa độ, thời gian và Device ID | ❌ Phải có mặt tại cơ sở y tế | Chuỗi nha khoa, thẩm mỹ viện, phòng khám tư `[Đã xác minh]` |
 
 ---
 
-## 🎯 3 TÌNH HUỐNG LÂM SÀNG THỰC TẾ
+## 🔍 TÓM TẮT 6 PHƯƠNG THỨC KÝ TRÊN THỊ TRƯỜNG
 
-1. **Bệnh nhân 75 tuổi đi khám một mình:** VNeID bó tay ➔ EasyCA quét CCCD eKYC tại quầy trong 30s.
-2. **Cấp cứu trong đêm, người nhà ở tỉnh khác:** Ký tablet và 2ID bó tay ➔ EasyCA gửi link ký từ xa qua eKYC tức thì.
-3. **Kiện tụng tai biến phẫu thuật ra Tòa:** Ký tablet thua kiện ➔ EasyCA thắng kiện 100% nhờ chứng cứ điện tử nguyên bản.
+1. **Chữ ký Cảm ứng trên Tablet (DentalFlow, Viettel HMS, các phòng khám):** Ký bằng ngón tay hoặc bút cảm ứng trên màn hình máy tính bảng. Mức độ tin cậy chứng minh phụ thuộc vào việc hệ thống có lưu trữ đầy đủ chuỗi nhật ký kiểm toán (Audit Trail) và cơ chế khóa toàn vẹn tài liệu hay không.
+2. **Kỹ thuật Sinh trắc học (Dấu vân tay điện tử tại quầy):** Tiện lợi cho người cao tuổi, nhưng chủ yếu phục vụ định danh; cần kết hợp chữ ký số của hệ thống để niêm phong nội dung tài liệu.
+3. **Xác thực mã OTP (FPT eHospital):** Người bệnh không cần thiết bị thông minh; tuy nhiên phát sinh chi phí tin nhắn viễn thông và phụ thuộc vào chất lượng sóng mạng tại các khu vực đặc thù (phòng mổ, tầng hầm).
+4. **Xác nhận qua App VNeID (ISOFH tại BV Xanh Pôn):** Tính xác thực danh tính rất cao từ Bộ Công An; tuy nhiên đòi hỏi người bệnh phải có smartphone kết nối mạng và tài khoản VNeID Mức 2.
+5. **Quét chip CCCD qua NFC (2ID tại BV Từ Dũ):** Thao tác nhanh tại quầy không cần smartphone; tuy nhiên chưa hỗ trợ trường hợp thân nhân ở xa cần ký xác nhận từ xa.
+6. **Chữ ký số Chuẩn PKI cá nhân (EasyCA - SoftDreams):** Cấp chứng thư số cá nhân theo sự vụ/thời hạn ngắn lưu trên Cloud HSM; khả năng chứng minh tính toàn vẹn và xác thực chủ thể cao nhất theo Luật Giao dịch điện tử 2023; cần hoàn thiện quy trình thuê bao theo Nghị định số 23/2025/NĐ-CP.
 
 ---
 
-## 🔗 Danh mục Báo cáo Chi tiết Từng Đối thủ
+## 🔗 Danh mục Báo cáo Chi tiết Từng Giải pháp
 
-- ⭐ [01 - EasyCA (SoftDreams) - Chuẩn PKI](competitors/01-easyca-softdreams.md)
-- 💳 [02 - 2ID / 2Contract (Quét chip CCCD)](competitors/02-2id-2contract.md)
-- 📱 [03 - ISOFH (Ký qua App VNeID BV Xanh Pôn)](competitors/03-isofh-vneid.md)
-- 🏥 [04 - Viettel HMS (Ký tay Tablet & VNeID)](competitors/04-viettel-hms.md)
+- ⭐ [01 - EasyCA (SoftDreams) - Chuẩn PKI theo Nghị định 23/2025/NĐ-CP](competitors/01-easyca-softdreams.md)
+- 💳 [02 - 2ID / 2Contract (Quét chip CCCD tại BV Từ Dũ)](competitors/02-2id-2contract.md)
+- 📱 [03 - ISOFH (Ký qua App VNeID tại BV Xanh Pôn)](competitors/03-isofh-vneid.md)
+- 🏥 [04 - Viettel HMS (Ký tay Tablet & VNeID khối BV công)](competitors/04-viettel-hms.md)
 - 🌐 [05 - VNPT HIS & SmartCA](competitors/05-vnpt-his.md)
-- 📩 [06 - FPT eHospital (Ký OTP SMS & VNeID)](competitors/06-fpt-ehospital.md)
-- ✍️ [07 - Mô hình Ký tay Tablet (DentalFlow...)](competitors/07-ky-tay-tablet.md)
+- 📩 [06 - FPT eHospital (Xác thực OTP SMS & eSign)](competitors/06-fpt-ehospital.md)
+- ✍️ [07 - Mô hình Ký tay Tablet Cảm ứng](competitors/07-ky-tay-tablet.md)
+- 📋 [00 - Mục lục & Cấu trúc Dữ liệu](competitors/00-INDEX.md)

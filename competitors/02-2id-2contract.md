@@ -1,92 +1,115 @@
 ---
-title: "2ID / 2Contract — Xác thực & Ký Bệnh nhân bằng Thẻ CCCD gắn Chip"
-vendor: "Công ty Cổ phần Chuyển đổi số 2ID (Hợp tác C06 - Bộ Công An)"
-product: "2Contract"
-signing_method: "Quét chip CCCD (NFC) + Đối soát khuôn mặt C06"
-tt13_category: "Hình thức 2 (Sinh trắc) & Hình thức 3 (Phương tiện điện tử)"
-legal_standing: "Khá cao (Bảo chứng qua dữ liệu C06 Bộ Công An)"
-target_hospital: "Bệnh viện tuyến đầu có lưu lượng khám lớn"
-deployments: "BV Từ Dũ, BV Thanh Nhàn, BV Ung Bướu Hà Nội, BV Nhi đồng Cần Thơ"
-role: "Đối thủ trực tiếp lớn nhất hiện nay"
+title: "2ID / 2Contract — Giải pháp Xác thực & Ký Xác nhận bằng Thẻ CCCD gắn Chip"
+vendor: "Công ty Cổ phần Chuyển đổi số 2ID"
+product: "2Contract (Nền tảng ký hợp đồng điện tử & xác thực danh tính)"
+signing_method: "Quét chip CCCD (NFC) + Đối soát sinh trắc học khuôn mặt"
+tt13_category: "Nhóm 2 (Sinh trắc học) & Nhóm 3 (Phương tiện điện tử khác theo K4 Đ22 Luật GDĐT)"
+role: "Nhà cung cấp giải pháp công nghệ / Đơn vị tích hợp"
+last_updated: "2026-11-09"
 ---
 
-# 2ID / 2Contract — Giải pháp Quét chip CCCD tại Bệnh viện
-
-2ID là đơn vị tiên phong ứng dụng **Thẻ Căn cước công dân gắn chip (NFC)** kết hợp nền tảng **2Contract** để giải quyết bài toán ký cam kết và xác nhận của bệnh nhân/thân nhân tại bệnh viện.
+# 2ID / 2Contract — Giải pháp Xác thực & Ký Xác nhận qua Thẻ CCCD gắn Chip
 
 ---
 
-## 1. Cơ chế Hoạt động & Quy trình Lâm sàng tại Bệnh viện
+## 1. Thông tin Doanh nghiệp & Vị thế
+- **Tên pháp nhân:** Công ty Cổ phần Chuyển đổi số 2ID `[Đã xác minh]`.
+- **Sản phẩm:** 2Contract — Nền tảng ký hợp đồng và tài liệu điện tử, giải pháp đọc và xác thực thẻ CCCD gắn chip tích hợp hệ thống y tế `[Đã xác minh]`.
+- **Vai trò trong chuỗi cung ứng Y tế:** Đơn vị cung cấp giải pháp công nghệ (ISV) và nhà tích hợp thiết bị; không trực tiếp là Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng (CA) `[Đã xác minh: 2ID không nằm trong danh mục CA công cộng do NEAC công bố]`.
+- **Đối tác liên quan:** Hợp tác triển khai các giải pháp ứng dụng tiện ích từ Đề án 06 và thiết bị xác thực thẻ CCCD gắn chip chuẩn ICAO `[Có nguồn tham khảo qua truyền thông doanh nghiệp]`.
+
+---
+
+## 2. Sản phẩm & Cơ chế Công nghệ
+
+Để đánh giá chính xác giải pháp 2ID/2Contract, cần phân tách bạch 5 thành phần nghiệp vụ riêng biệt:
 
 ```
-[Bệnh nhân / Người nhà đến quầy tiếp nhận hoặc làm thủ tục phẫu thuật]
-                               │
-                               ▼
-        ┌────────────────────────────────────────────────────────┐
-        │ Bước 1: Quét thẻ CCCD gắn chip (NFC)                   │
-        │ - Đặt CCCD lên đầu đọc chuyên dụng tại bàn tiếp đón    │
-        │ - Đọc dữ liệu sinh trắc học & thông tin mã hóa trong chip│
-        │ - Tự động điền thông tin hành chính vào phiếu khám     │
-        └──────────────────────────┬─────────────────────────────┘
-                                   │
-                                   ▼
-        ┌────────────────────────────────────────────────────────┐
-        │ Bước 2: Đối soát sinh trắc học khuôn mặt 1:1           │
-        │ - Camera tại quầy chụp ảnh khuôn mặt bệnh nhân         │
-        │ - So khớp trực tiếp với ảnh gốc lưu trong chip CCCD/C06│
-        │ - Xác minh chính chủ (chống dùng thẻ CCCD người khác)  │
-        └──────────────────────────┬─────────────────────────────┘
-                                   │
-                                   ▼
-        ┌────────────────────────────────────────────────────────┐
-        │ Bước 3: Xác nhận cam kết & Ghi nhận chữ ký             │
-        │ - Bệnh nhân xem tài liệu trên màn hình phụ tại quầy    │
-        │ - Bệnh nhân bấm "Đồng ý cam kết"                       │
-        │ - 2Contract tạo bản ghi bằng chứng định danh điện tử   │
-        │   (Audit Trail: Mã thẻ, ảnh chụp, kết quả so khớp, giờ)│
-        │ - Hệ thống ký số niêm phong bằng Chứng thư số BỆNH VIỆN│
-        └────────────────────────────────────────────────────────┘
+[1. ĐỊNH DANH NGƯỜI BỆNH]
+   Quét chip CCCD (NFC) ➔ Đọc dữ liệu nhân thân (DG1) & ảnh chân dung (DG2) chuẩn ICAO 9303.
+         │
+         ▼
+[2. XÁC THỰC NGƯỜI THỰC HIỆN]
+   Camera đối soát sinh trắc học khuôn mặt 1:1 (Face Matching) giữa người đứng trước quầy 
+   và ảnh gốc trích xuất từ chip CCCD.
+         │
+         ▼
+[3. GHI NHẬN SỰ ĐỒNG Ý (CONSENT)]
+   Người bệnh/người nhà xem nội dung tài liệu trên màn hình phụ tại quầy tiếp đón 
+   và bấm xác nhận chấp thuận cam kết / thủ tục.
+         │
+         ▼
+[4. KÝ SỐ NIÊM PHONG TÀI LIỆU]
+   Tài liệu PDF được ký số niêm phong bằng Chứng thư số của BỆNH VIỆN hoặc tổ chức cung cấp dịch vụ. 
+   (Bệnh nhân không được cấp chứng thư số PKI cá nhân riêng biệt).
+         │
+         ▼
+[5. LƯU TRỮ BẰNG CHỨNG (AUDIT TRAIL)]
+   Hệ thống lưu trữ gói bằng chứng điện tử gồm: mã thẻ, thời gian giao dịch, log so khớp sinh trắc, 
+   ảnh chụp thời điểm xác nhận, gắn liền với tài liệu đã niêm phong.
 ```
+
+- **Công nghệ đọc thẻ:** Thiết bị đầu đọc thẻ chuyên dụng hỗ trợ giao tiếp không tiếp xúc (NFC) đọc dữ liệu từ chip thẻ Căn cước công dân `[Đã xác minh]`.
+- **Công nghệ sinh trắc:** Thuật toán so khớp khuôn mặt 1:1 giữa khuôn mặt chụp thực tế và dữ liệu ảnh lưu trong chip `[Đã xác minh]`.
+- **Khả năng tích hợp HIS/EMR:** Cung cấp API / SDK kết nối với phần mềm quản lý bệnh viện tại khâu tiếp đón và lập phiếu phẫu thuật/thủ thuật `[Có nguồn tham khảo]`.
 
 ---
 
-## 2. Phân tích Bản chất Pháp lý: 2ID vs EasyCA PKI
+## 3. Căn cứ Pháp lý & Giá trị Chứng cứ
 
-Đây là điểm khác biệt cốt lõi mà đội ngũ EasyCA cần nắm chắc:
+- **Phân nhóm theo Thông tư 13/2025/TT-BYT:** 
+  - Thuộc **Nhóm 2: Kỹ thuật sinh trắc học** (đối soát khuôn mặt).
+  - Kết hợp **Nhóm 3: Các hình thức xác nhận bằng phương tiện điện tử khác** theo khoản 4 Điều 22 Luật Giao dịch điện tử số 20/2023/QH15.
+- **Căn cứ pháp lý áp dụng:**
+  - Luật Giao dịch điện tử số 20/2023/QH15 (Điều 22 khoản 4 quy định về phương tiện điện tử khác thể hiện sự chấp thuận của chủ thể ký).
+  - Thông tư số 13/2025/TT-BYT (Điều 3).
+  - Nghị định số 59/2022/NĐ-CP và Luật Căn cước số 26/2023/QH15 liên quan đến khai thác thông tin trên thẻ Căn cước.
+- **Đánh giá giá trị chứng cứ:**
+  - Việc quét thẻ chip và đối soát sinh trắc học đem lại **độ tin cậy định danh rất cao**, hạn chế tối đa tình trạng mượn thẻ BHYT hoặc mạo danh người bệnh.
+  - Về mặt chứng cứ, hồ sơ được bảo vệ bằng chuỗi nhật ký kiểm toán (Audit Trail) kết hợp chữ ký số của cơ sở khám chữa bệnh. 
+  - *Hạn chế pháp lý:* Do người bệnh không sử dụng chữ ký số cá nhân (PKI) với cặp khóa riêng của mình, việc chứng minh tính chấp thuận độc lập của cá nhân phụ thuộc vào tính toàn vẹn của hệ thống ghi nhận bằng chứng do bệnh viện và đơn vị giải pháp quản lý `[Nhận định chuyên môn]`.
 
-| Tiêu chí pháp lý | Giải pháp 2ID / 2Contract | Giải pháp EasyCA PKI |
+---
+
+## 4. Khách hàng & Triển khai Thực tế
+
+| Cơ sở Y tế | Nội dung triển khai | Tình trạng | Nguồn xác minh |
+|---|---|---|---|
+| **Bệnh viện Từ Dũ (TP.HCM)** | Ứng dụng CCCD gắn chip xác thực bệnh nhân và ký cam kết phẫu thuật/thủ thuật sản khoa | Đã triển khai thực tế | Cổng thông tin Sở Y tế TP.HCM, Báo Sức khỏe & Đời sống `[Đã xác minh]` |
+| **Bệnh viện Thanh Nhàn (Hà Nội)** | Ứng dụng giải pháp xác thực CCCD gắn chip trong quy trình khám chữa bệnh | Có thông tin hợp tác | Website và thông cáo của doanh nghiệp `[Có nguồn tham khảo]` |
+| **Bệnh viện Ung Bướu Hà Nội** | Thí điểm tiện ích định danh xác thực điện tử | Thí điểm | Truyền thông doanh nghiệp `[Có nguồn tham khảo]` |
+| **Bệnh viện Nhi đồng Cần Thơ** | Tìm hiểu / Thí điểm giải pháp xác thực | Thí điểm | Báo cáo nội bộ ngành `[Chưa xác minh độc lập]` |
+
+---
+
+## 5. Đánh giá Cạnh tranh vs EasyCA
+
+### 5.1 Điểm mạnh của 2ID
+- **Trải nghiệm người bệnh rất thuận tiện:** Người bệnh chỉ cần mang thẻ CCCD gắn chip — giấy tờ bắt buộc khi đi khám bệnh; không cần sở hữu smartphone, không cần cài đặt ứng dụng hay nhớ mật khẩu.
+- **Tốc độ xử lý tại quầy nhanh:** Thao tác đọc thẻ và so khớp khuôn mặt diễn ra trong thời gian ngắn, phù hợp với lưu lượng bệnh nhân đông tại các bệnh viện tuyến đầu.
+- **Đã có case study điển hình:** Việc triển khai thực tế tại Bệnh viện Từ Dũ là minh chứng tham chiếu có sức nặng khi tiếp cận các bệnh viện sản - nhi và ngoại khoa.
+
+### 5.2 Điểm yếu & Rào cản Vận hành
+- **Chi phí đầu tư phần cứng tại chỗ:** Bệnh viện phải trang bị đầu đọc thẻ NFC và camera nhận diện tại từng bàn tiếp đón, phòng khám, quầy viện phí (chi phí mua sắm thiết bị ban đầu đáng kể).
+- **Hạn chế ký tại buồng bệnh:** Thiết bị đầu đọc kết nối máy tính để bàn khó di chuyển linh hoạt khi bác sĩ đi buồng thăm khám tại giường bệnh nội trú.
+- **Không hỗ trợ ký từ xa:** Khi người bệnh cấp cứu mà thân nhân/người đại diện hợp pháp ở xa (ở tỉnh khác hoặc nước ngoài), mô hình bắt buộc áp thẻ vật lý vào đầu đọc tại viện hoàn toàn không thể thực hiện được.
+
+### 5.3 So sánh Cạnh tranh trực diện
+
+| Tiêu chí | 2ID / 2Contract | EasyCA PKI (SoftDreams) |
 |---|---|---|
-| **Bản chất chữ ký của người bệnh** | **Xác nhận điện tử gắn với dữ liệu CCCD** (Electronic Confirmation). Bệnh nhân không sở hữu cặp khóa Private Key riêng. | **Chữ ký số PKI cá nhân chuẩn X.509** (Digital Signature). Bệnh nhân được cấp chứng thư số và ký bằng Private Key riêng của mình. |
-| **Phân loại TT 13/2025** | **Hình thức 2 & 3** (Sinh trắc học kết hợp phương tiện điện tử). | **Hình thức 1** (Chữ ký điện tử hợp pháp — Cấp độ pháp lý cao nhất). |
-| **Chủ thể ký số niêm phong** | Thường là **Chữ ký số của Bệnh viện / Tổ chức** ký đóng dấu lên tài liệu sau khi có log xác nhận của bệnh nhân. | **Chính bệnh nhân ký số PKI** lên tài liệu, sau đó Bác sĩ / Bệnh viện ký số tiếp theo (Dual Signing). |
-| **Tính chống chối bỏ trước Tòa** | Khá tốt nhờ dữ liệu C06, nhưng nếu luật sư tranh tụng về quyền sở hữu khóa bí mật cá nhân thì 2ID không chứng minh được bệnh nhân nắm giữ Private Key. | **Mạnh nhất tuyệt đối:** Đáp ứng trọn vẹn Luật Giao dịch điện tử 2023 và Nghị định 130/2018/NĐ-CP về chữ ký số công cộng. |
+| **Phương thức ký chính** | Xác nhận qua CCCD chip + Sinh trắc học khuôn mặt | Chữ ký số công cộng PKI (Remote Signing) |
+| **Phân nhóm TT 13/2025** | Nhóm 2 & Nhóm 3 | Nhóm 1 (Chữ ký điện tử hợp pháp) |
+| **Chủ thể ký số tài liệu** | Chứng thư số của Bệnh viện / Tổ chức | Bệnh nhân ký bằng Private Key riêng của mình |
+| **Yêu cầu đối với bệnh nhân** | Bắt buộc có thẻ CCCD gắn chip vật lý tại quầy | Linh hoạt: CCCD tại quầy hoặc Smartphone từ xa |
+| **Ký từ xa (người nhà ở xa)** | Không hỗ trợ (phải có mặt tại viện) | Hỗ trợ qua luồng eKYC từ xa |
+| **Đầu tư phần cứng ban đầu** | Bắt buộc mua đầu đọc NFC + Camera cho từng quầy | Tận dụng thiết bị sẵn có (Tablet, Smartphone, Web) |
 
 ---
 
-## 3. Điểm mạnh Thực tế của 2ID
-
-- ✅ **Trải nghiệm tại quầy cực tốt:** Bệnh nhân không cần smartphone, không cần tải app hay nhớ mật khẩu; chỉ cần mang thẻ CCCD gắn chip (thứ bắt buộc khi khám BHYT).
-- ✅ **Triển khai thành công ở nhiều BV lớn:** Bệnh viện Từ Dũ (nổi tiếng với phiếu đồng ý phẫu thuật sản khoa), BV Thanh Nhàn, BV Ung Bướu Hà Nội. Đây là rào cản tham chiếu lớn khi EasyCA đi chào hàng.
-- ✅ **Tốc độ làm thủ tục nhanh:** Quét chip và so khớp khuôn mặt diễn ra trong 5 - 10 giây.
-
----
-
-## 4. Điểm yếu Cốt tử của 2ID để EasyCA Khai thác
-
-1. **Hoàn toàn không ký từ xa được:**
-   - Trường hợp **Người nhà bệnh nhân ở xa** (ví dụ: con ở nước ngoài hoặc ở tỉnh khác cần ký cam kết bảo lãnh mổ khẩn cấp cho bố mẹ tại viện) thì mô hình quét thẻ CCCD của 2ID **hoàn toàn bất lực**.
-2. **Phụ thuộc phần cứng đầu đọc tại quầy:**
-   - 2ID bắt buộc phải có đầu đọc thẻ NFC chuyên dụng và camera tại từng bàn làm việc/quầy tiếp nhận. Chi phí trang bị phần cứng cho toàn viện (hàng chục đến hàng trăm quầy) là rất lớn.
-   - Khi bác sĩ đi buồng (thăm khám tại giường bệnh nội trú), việc mang theo đầu đọc thẻ cồng kềnh rất bất tiện.
-3. **Không phải Chữ ký số PKI cá nhân (Hình thức 1):**
-   - 2ID không phải là CA công cộng được Bộ TT&TT cấp phép. Họ chỉ cung cấp giải pháp công nghệ xác thực danh tính.
-
----
-
-## 5. Kịch bản Bán hàng Thực chiến khi Gặp Khách hàng Khen 2ID
-
-- **Tình huống Bệnh viện nói:** *"2ID đã làm ở Bệnh viện Từ Dũ rất xịn rồi, quét CCCD gắn chip tiện lợi, bên em có làm được như họ không?"*
-- **EasyCA đáp trả (3 đòn bẩy):**
-  1. **Thừa nhận thế mạnh:** *"2ID là một giải pháp rất tốt ở khâu quét thẻ CCCD tại quầy tiếp đón ban đầu."*
-  2. **Đòn bẩy 1 — Ký từ xa & Tại giường:** *"Tuy nhiên, Bệnh viện sẽ xử lý thế nào khi người nhà bệnh nhân đang ở tỉnh khác cần ký cam kết mổ cấp cứu gấp trong đêm? 2ID bắt buộc người nhà phải có mặt tại viện để áp thẻ vào đầu đọc. EasyCA giải quyết triệt để vấn đề này vì hỗ trợ cả quét CCCD tại quầy lẫn **Ký từ xa qua eKYC trên điện thoại** cho người nhà ở bất kỳ đâu."*
-  3. **Đòn bẩy 2 — Nâng cấp lên Hình thức 1:** *"2ID chỉ là giải pháp xác thực công nghệ (Hình thức 2/3). EasyCA là CA quốc gia được Bộ TT&TT cấp phép (Hình thức 1). Chúng tôi cấp Chứng thư số PKI cá nhân chuẩn X.509 đích danh cho người bệnh, giúp bệnh viện đạt chuẩn pháp lý cao nhất và được bảo hiểm trách nhiệm pháp lý theo luật."*
+## 6. Nguồn Tham khảo
+1. Cổng thông tin điện tử Sở Y tế TP. Hồ Chí Minh — Bài viết về ứng dụng CCCD gắn chip tại BV Từ Dũ.
+2. Báo Sức khỏe & Đời sống (Cơ quan ngôn luận Bộ Y tế) — Chuyên đề chuyển đổi số bệnh án điện tử.
+3. Website chính thức Công ty CP Chuyển đổi số 2ID: `2id.vn` và `2contract.vn`.
+4. Danh mục Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng — Trung tâm Chứng thực điện tử quốc gia (NEAC).
+5. Tiêu chuẩn ICAO Doc 9303 (Machine Readable Travel Documents) áp dụng trên thẻ Căn cước công dân gắn chip.
