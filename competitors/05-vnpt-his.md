@@ -1,11 +1,12 @@
 ---
 title: "VNPT-IT — Hệ sinh thái Y tế VNPT HIS & Dịch vụ VNPT SmartCA"
-vendor: "Công ty Công nghệ thông tin VNPT (VNPT-IT) — Tập đoàn Bưu chính Viễn thông Việt Nam"
-product: "Hệ thống Quản lý Bệnh viện VNPT HIS & Dịch vụ chữ ký số từ xa VNPT SmartCA"
+vendor: "Công ty Công nghệ thông tin VNPT (VNPT-IT) — Chi nhánh Tập đoàn Bưu chính Viễn thông Việt Nam"
+product: "Hệ thống Quản lý Bệnh viện VNPT HIS, Bệnh án Điện tử VNPT EMR & Dịch vụ Chữ ký số từ xa VNPT SmartCA"
 signing_method: "Ký qua VNeID, Ký cảm ứng Tablet & Chữ ký số từ xa VNPT SmartCA"
 tt13_category: "Nhóm 1 (SmartCA cán bộ y tế) & Nhóm 3 (VNeID / Ký Tablet bệnh nhân)"
-role: "Nhà cung cấp hạ tầng viễn thông, phần mềm HIS/EMR và CA công cộng hàng đầu"
+role: "Nhà cung cấp hạ tầng viễn thông, phần mềm HIS/EMR và CA công cộng có thị phần cơ sở y tế lớn nhất"
 last_updated: "2026-11-09"
+author: "EasyCA Solution Team — SoftDreams"
 ---
 
 # VNPT-IT — Hệ sinh thái Y tế VNPT HIS & Dịch vụ VNPT SmartCA
@@ -14,15 +15,17 @@ last_updated: "2026-11-09"
 
 ## 1. Thông tin Doanh nghiệp & Vị thế trong Hệ sinh thái Y tế
 
-- **Tên pháp nhân:** Công ty Công nghệ thông tin VNPT (VNPT-IT) — Chi nhánh Tập đoàn Bưu chính Viễn thông Việt Nam `[Đã xác minh]`.
+- **Tên pháp nhân:** Công ty Công nghệ thông tin VNPT (VNPT-IT) — Chi nhánh Tập đoàn Bưu chính Viễn thông Việt Nam `[Đã xác minh từ CSDL Doanh nghiệp]`.
 - **Sản phẩm & Giải pháp cốt lõi:**
-  - Hệ thống Quản lý Thông tin Bệnh viện (VNPT HIS), Hồ sơ Bệnh án Điện tử (VNPT EMR), Quản lý Trạm Y tế Xã/Phường (VNPT HMIS), Hệ thống Quản lý Xét nghiệm (VNPT LIS), Hệ thống Lưu trữ & Truyền tải Hình ảnh (VNPT RIS/PACS) `[Đã xác minh]`.
+  - Hệ thống Quản lý Thông tin Bệnh viện (VNPT HIS), Hồ sơ Bệnh án Điện tử (VNPT EMR), Nền tảng Quản lý Trạm Y tế Xã/Phường (VNPT HMIS), Hệ thống Quản lý Xét nghiệm (VNPT LIS), Hệ thống Lưu trữ & Truyền tải Hình ảnh y tế (VNPT RIS/PACS) `[Đã xác minh]`.
   - Dịch vụ chứng thực chữ ký số công cộng VNPT-CA và Dịch vụ Chữ ký số từ xa VNPT SmartCA `[Đã xác minh theo giấy phép của Bộ TT&TT]`.
 - **Phân tách ba vai trò trong chuỗi cung ứng Y tế:**
   1. *Nhà cung cấp dịch vụ tin cậy (CA công cộng):* VNPT là một trong những CA đầu tiên tại Việt Nam, sở hữu hạ tầng chứng thực số quy mô lớn và giấy phép cung cấp dịch vụ chữ ký số từ xa (Remote Signing).
   2. *Nhà phát triển giải pháp phần mềm y tế (HIS/EMR Vendor):* Tự chủ nghiên cứu, xây dựng và làm chủ mã nguồn hệ sinh thái phần mềm quản lý y tế toàn diện từ trạm y tế đến bệnh viện chuyên khoa.
   3. *Nhà tích hợp hệ thống (System Integrator):* Cung cấp trọn gói từ đường truyền viễn thông, hạ tầng trung tâm dữ liệu (VNPT Cloud), thiết bị phần cứng, an toàn thông tin đến giải pháp phần mềm ứng dụng.
-- **Mức độ hiện diện thị trường:** VNPT chiếm ưu thế vượt trội tại phân khúc y tế cơ sở (hơn 7.000 trạm y tế xã phường sử dụng VNPT HMIS) và có độ phủ rất lớn tại các trung tâm y tế quận/huyện, bệnh viện đa khoa tuyến huyện và tuyến tỉnh `[Đã xác minh qua báo cáo công khai của Bộ Y tế và Cục CNTT]`.
+- **Mức độ hiện diện thị trường & Quy mô triển khai:**
+  - Theo số liệu do VNPT công bố, các giải pháp y tế số của tập đoàn đã hiện diện tại khoảng **7.800 cơ sở khám chữa bệnh trên toàn quốc**, trong đó hệ thống VNPT HMIS phục vụ gần **7.000 trạm y tế xã/phường** `[Do doanh nghiệp công bố]`.
+  - *(Lưu ý kiểm chứng: Đây là số liệu do chính VNPT công bố về độ phủ của toàn bộ các sản phẩm CNTT y tế, không phải số liệu kiểm toán độc lập và không đồng nghĩa toàn bộ các cơ sở này đều đã triển khai đầy đủ bệnh án điện tử và chữ ký số)*.
 
 ---
 
@@ -45,8 +48,8 @@ flowchart TD
 
     subgraph "Nhóm Người bệnh & Thân nhân (Nhóm 3)"
         BN["Bệnh nhân / Người nhà"]
-        BN -->|"Cách 1: Ký cảm ứng tại quầy"| TABLET["Tablet tiếp đón (Lưu nét vẽ + Audit Log)"]
-        BN -->|"Cách 2: Xác nhận từ xa"| VNEID["Ứng dụng VNeID (Liên kết Đề án 06)"]
+        BN -->|"Lựa chọn 1: Ký cảm ứng tại quầy"| TABLET["Tablet tiếp đón (Lưu nét vẽ Canvas)"]
+        BN -->|"Lựa chọn 2: Xác nhận từ xa"| VNEID["Ứng dụng VNeID (Liên kết Đề án 06)"]
         TABLET -->|"Gắn vào phiếu cam kết"| HIS
         VNEID -->|"Ghi nhận mã chấp thuận"| HIS
     end
@@ -57,18 +60,18 @@ flowchart TD
 ### 2.1 Chữ ký số cho Nhân viên Y tế (VNPT SmartCA)
 - Bác sĩ, dược sĩ, điều dưỡng sử dụng ứng dụng di động VNPT SmartCA hoặc tích hợp chữ ký số tập trung HSM để ký y lệnh, kết quả cận lâm sàng và bệnh án điện tử.
 - Thuộc **Nhóm 1: Chữ ký điện tử hợp pháp (Chữ ký số PKI)** theo quy định tại Điều 3 Thông tư 13/2025/TT-BYT `[Đã xác minh]`.
-- Đáp ứng đầy đủ các tiêu chuẩn kỹ thuật về chữ ký số theo Thông tư 31/2020/TT-BTTTT và quy chuẩn eIDAS/ETSI.
+- Đáp ứng đầy đủ các tiêu chuẩn kỹ thuật về chữ ký số theo quy định pháp luật.
 
 ### 2.2 Ký xác nhận của Bệnh nhân & Người nhà bệnh nhân
 Đối với đối tượng người bệnh và thân nhân tại các cơ sở triển khai VNPT HIS, hai phương thức chủ đạo hiện nay là:
 1. **Ký cảm ứng trên máy tính bảng (Tablet):** Người bệnh vẽ nét chữ ký trên thiết bị cảm ứng tại quầy tiếp đón hoặc giường bệnh. Hệ thống lưu hình ảnh nét vẽ, dấu thời gian và ID nhân viên giám sát giao dịch.
-2. **Xác nhận qua tài khoản định danh VNeID:** Triển khai theo đề án liên thông y tế điện tử, gửi yêu cầu xác nhận thanh toán viện phí hoặc phiếu đồng thuận điều trị về ứng dụng VNeID của công dân `[Đã triển khai thí điểm tại một số bệnh viện như BV Đa khoa Nông nghiệp]`.
+2. **Xác nhận qua tài khoản định danh VNeID:** Triển khai theo đề án liên thông y tế điện tử, gửi yêu cầu xác nhận thanh toán viện phí hoặc phiếu đồng thuận điều trị về ứng dụng VNeID của công dân.
 
 ### 2.3 Phân tích Kỹ thuật & Rào cản mô hình cấp SmartCA cá nhân cho Người bệnh
-Về lý thuyết công nghệ, VNPT sở hữu nền tảng SmartCA hoàn toàn có năng lực cấp chứng thư số cá nhân cho người dân. Tuy nhiên, trong môi trường bệnh viện, mô hình này đối mặt với các rào cản thực tế:
-- **Ma sát onboarding tại quầy tiếp đón:** Quy trình đăng ký cấp mới một chứng thư số cá nhân tiêu chuẩn đòi hỏi cài đặt ứng dụng VNPT SmartCA, chụp ảnh CCCD 2 mặt, quay video nhận diện sinh trắc học khuôn mặt và kích hoạt mã PIN bảo mật. Quy trình này thường mất từ 3-7 phút, có nguy cơ gây ùn ứ nghiêm trọng tại các khung giờ cao điểm tiếp đón bệnh nhân `[Nhận định chuyên môn]`.
+Về lý thuyết công nghệ, VNPT sở hữu nền tảng SmartCA hoàn toàn có năng lực cấp chứng thư số cá nhân cho người dân. Tuy nhiên, trong môi trường bệnh viện thực tế, mô hình này đối mặt với các rào cản cần lưu ý:
+- **Ma sát đăng ký tại quầy tiếp đón (Giả thuyết vận hành):** Quy trình đăng ký cấp mới một chứng thư số cá nhân tiêu chuẩn đòi hỏi cài đặt ứng dụng VNPT SmartCA, chụp ảnh CCCD 2 mặt, nhận diện sinh trắc học khuôn mặt và kích hoạt mã PIN bảo mật. Ước tính quy trình này có thể mất từ 3-7 phút đối với người dùng mới, tiềm ẩn nguy cơ gây ùn ứ tại các khung giờ cao điểm tiếp đón bệnh nhân `[Nhận định chuyên môn / Cần kiểm chứng qua PoC]`.
 - **Rào cản mô hình thuê bao (Subscription model):** Chứng thư số cá nhân thông thường được thiết kế theo dạng thuê bao năm (thời hạn 1 năm hoặc nhiều năm). Đối với bệnh nhân vãng lai chỉ đi khám chữa bệnh 1-2 lần trong năm, việc duy trì một thuê bao chữ ký số cá nhân là không thực tế nếu không có cơ chế gói lượt ký (Transaction Pack) được bệnh viện bao cấp chi phí `[Nhận định thị trường]`.
-- **Thực tế thị trường:** VNPT chưa thương mại hóa gói giải pháp chuyên biệt "Chữ ký số PKI theo sự vụ (Transactional PKI)" tối ưu hóa thời gian thực cho luồng bệnh nhân ngoại trú tại bệnh viện.
+- **Hiện trạng thương mại:** Tại thời điểm rà soát, **chưa tìm thấy bằng chứng** cho thấy VNPT đã đóng gói và thương mại hóa một gói dịch vụ chữ ký số PKI chuyên biệt theo từng lượt khám phục vụ riêng cho bệnh nhân vãng lai tại các bệnh viện `[Chưa xác minh được gói sản phẩm tương đương]`.
 
 ---
 
@@ -78,14 +81,13 @@ Về lý thuyết công nghệ, VNPT sở hữu nền tảng SmartCA hoàn toàn
   - Chữ ký bác sĩ qua VNPT SmartCA: Thuộc **Nhóm 1 (Chữ ký điện tử hợp pháp)**.
   - Ký cảm ứng Tablet / Xác nhận qua VNeID của bệnh nhân: Thuộc **Nhóm 3 (Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác)** theo khoản 4 Điều 22 Luật GDĐT 2023.
 - **Căn cứ Luật Giao dịch điện tử số 20/2023/QH15:**
-  - *Khoản 11, 12 Điều 3:* Phân định ranh giới giữa chữ ký điện tử nói chung và chữ ký số PKI.
-  - *Điều 11:* Giá trị chứng cứ của hồ sơ y tế điện tử được cơ quan tài phán đánh giá dựa trên độ tin cậy của cách thức khởi tạo, gửi, nhận, lưu trữ thông điệp dữ liệu, bảo đảm tính toàn vẹn và khả năng xác định danh tính chủ thể.
+  - *Khoản 11, 12 Điều 3 & Điều 11:* Phân định ranh giới giữa chữ ký điện tử nói chung và chữ ký số PKI. Giá trị chứng cứ của hồ sơ y tế điện tử được cơ quan tài phán đánh giá dựa trên độ tin cậy của cách thức khởi tạo, gửi, nhận, lưu trữ thông điệp dữ liệu, bảo đảm tính toàn vẹn và khả năng xác định danh tính chủ thể.
   - *Điều 22 & Khoản 2 Điều 23:* Chữ ký số SmartCA của nhân viên y tế đáp ứng đầy đủ điều kiện an toàn và có giá trị pháp lý tương đương chữ ký tay của cá nhân.
 - **Tuân thủ Nghị định số 23/2025/NĐ-CP:**
-  - VNPT tuân thủ các quy định về tổ chức dịch vụ tin cậy, điều kiện cấp phát chứng thư số bằng phương thức điện tử (Điều 14, 15, 34, 35, 36) và bảo đảm quản lý an toàn khóa bí mật (Điều 37).
-- **Tuân thủ Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 & Nghị định số 356/2025/NĐ-CP:**
-  - Dữ liệu khám chữa bệnh trên VNPT HIS là **dữ liệu cá nhân nhạy cảm** (Điều 26 Luật 91/2025/QH15).
-  - Dữ liệu sinh trắc học khuôn mặt khi kích hoạt SmartCA là dữ liệu nhạy cảm theo Điều 31; VNPT bắt buộc phải thực hiện đánh giá tác động xử lý dữ liệu cá nhân (DPIA) theo luật định.
+  - VNPT tuân thủ các quy định về tổ chức dịch vụ tin cậy, điều kiện cấp phát chứng thư số bằng phương thức điện tử (Điều 36), nghĩa vụ lưu trữ thông tin tối thiểu 05 năm sau khi chứng thư hết hiệu lực (khoản 3 Điều 43) và bảo đảm quản lý an toàn khóa bí mật (Điều 37).
+- **Căn cứ Pháp luật về An toàn Thông tin Mạng & Bảo vệ Dữ liệu:**
+  - Hệ thống VNPT HIS tại các bệnh viện tuyến tỉnh/hạng I thường được thẩm định, phê duyệt phương án an toàn hệ thống thông tin **Cấp độ 3** theo quy định tại Luật An toàn thông tin mạng 2015 và Nghị định số 85/2016/NĐ-CP `[Đã xác minh căn cứ pháp lý]`.
+  - Dữ liệu khám chữa bệnh trên VNPT HIS là dữ liệu cá nhân nhạy cảm theo Điều 26 Luật Bảo vệ dữ liệu cá nhân 91/2025/QH15.
 
 ---
 
@@ -93,9 +95,11 @@ Về lý thuyết công nghệ, VNPT sở hữu nền tảng SmartCA hoàn toàn
 
 - **Mức độ hiện diện thị trường:**
   - VNPT là một trong những nhà cung cấp giải pháp CNTT y tế lớn nhất cả nước về số lượng cơ sở kết nối `[Đã xác minh qua Cổng dữ liệu Y tế Bộ Y tế]`.
-  - Hệ thống VNPT HMIS phục vụ gần 70% số trạm y tế trên toàn quốc `[Đã xác minh qua báo cáo chuyển đổi số ngành y tế]`.
-  - Hàng trăm bệnh viện đa khoa tuyến huyện và bệnh viện tỉnh sử dụng VNPT HIS (như BV ĐK Nông nghiệp, nhiều BV tại các tỉnh phía Bắc, miền Trung và Tây Nam Bộ).
-- **Thực tế triển khai chữ ký bệnh nhân:** Các bệnh viện sử dụng VNPT HIS hiện chủ yếu triển khai ký Tablet tại quầy ngoại trú hoặc ký giấy cam kết scan lại; việc triển khai cấp chữ ký số PKI cá nhân trực tiếp cho từng bệnh nhân ký hồ sơ bệnh án vẫn đang ở giai đoạn nghiên cứu mô hình `[Nhận định dựa trên khảo sát thực tế lâm sàng]`.
+  - Hàng trăm bệnh viện đa khoa tuyến huyện và bệnh viện tỉnh sử dụng VNPT HIS (như nhiều bệnh viện tại các tỉnh phía Bắc, miền Trung và Tây Nam Bộ).
+- **Trường hợp Bệnh viện Đa khoa Nông nghiệp:**
+  - Bệnh viện Đa khoa Nông nghiệp (bệnh viện hạng I trực thuộc Bộ NN&PTNT) là một trong những đơn vị sớm công bố hoàn thành triển khai bệnh án điện tử (EMR) và hệ thống PACS không in phim `[Đã xác minh từ báo chí chính thống]`.
+  - Bệnh viện đã hợp tác với VNPT triển khai chữ ký số SmartCA cho nhân viên y tế và thí điểm các luồng thanh toán viện phí số, kết nối dữ liệu Đề án 06.
+  - *Lưu ý kiểm chứng:* Hiện chưa có tài liệu chính thức xác nhận bệnh viện này cấp phát chứng thư số SmartCA cá nhân cho toàn bộ bệnh nhân ngoại trú; phương thức xác nhận bệnh nhân chủ yếu vẫn là ký Tablet hoặc ký giấy cam kết `[Chưa xác minh mức độ ký số người bệnh]`.
 
 ---
 
@@ -103,9 +107,9 @@ Về lý thuyết công nghệ, VNPT sở hữu nền tảng SmartCA hoàn toàn
 
 | STT | Tiêu chí Đánh giá | Hồ sơ VNPT (VNPT HIS / VNPT SmartCA) | Hồ sơ Đề xuất EasyCA (SoftDreams) |
 |:---:|---|---|---|
-| 1 | **Vai trò trong hệ sinh thái** | Nhà thầu viễn thông tổng thể, HIS/EMR vendor & CA công cộng | Nhà cung cấp dịch vụ tin cậy (CA công cộng) chuyên sâu |
-| 2 | **Sản phẩm & giải pháp liên quan** | VNPT HIS, VNPT EMR, VNPT HMIS, VNPT-CA, VNPT SmartCA | Dịch vụ chứng thực chữ ký số EasyCA, EasyCA Remote Signing |
-| 3 | **Phương thức ký người bệnh** | Ký cảm ứng trên Tablet & Thử nghiệm xác nhận VNeID | Chữ ký số PKI cá nhân (Remote Signing / On-demand HSM) |
+| 1 | **Vai trò trong hệ sinh thái** | Nhà thầu viễn thông tổng thể, HIS/EMR vendor & CA công cộng | Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng (CA công cộng) |
+| 2 | **Sản phẩm & giải pháp** | VNPT HIS, VNPT EMR, VNPT HMIS, VNPT-CA, VNPT SmartCA | EasyCA HSM, EasyCA Remote Signing, Cổng ký số bệnh nhân |
+| 3 | **Phương thức ký người bệnh** | Ký cảm ứng trên Tablet & Thử nghiệm xác nhận VNeID | Chữ ký số PKI cá nhân (Remote Signing / HSM) kết hợp eKYC |
 | 4 | **Đối tượng ký chính** | Cán bộ y tế (SmartCA) & Bệnh nhân (Tablet/VNeID) | Tập trung mở rộng giải pháp ký số cho Người bệnh & Thân nhân |
 | 5 | **Khả năng tích hợp HIS/EMR** | Tích hợp sẵn trong VNPT HIS; hạn chế mở cho HIS đối thủ | Độc lập, sẵn sàng mở cổng Open API tích hợp với mọi HIS/EMR |
 | 6 | **Khả năng Remote Signing** | `[Đã xác minh]` Có giấy phép & nền tảng VNPT SmartCA | `[Đã xác minh]` Có giấy phép số 82/GP-BTTTT về Remote Signing |
@@ -113,12 +117,12 @@ Về lý thuyết công nghệ, VNPT sở hữu nền tảng SmartCA hoàn toàn
 | 8 | **Khả năng xác thực sinh trắc** | Hỗ trợ eKYC di động / Tích hợp VNeID | Thiết kế hỗ trợ eKYC (đối soát CCCD gắn chip & khuôn mặt) |
 | 9 | **Bằng chứng triển khai tại BV** | `[Đã xác minh]` Hiện diện tại hàng nghìn cơ sở y tế | `[Chưa xác minh]` Chưa có dự án bệnh viện vận hành chính thức |
 | 10 | **Lợi thế cạnh tranh nổi bật** | Thỏa thuận chuyển đổi số toàn diện với UBND và Sở Y tế | Tính trung lập, tập trung giải quyết bài toán nghiệp vụ người bệnh |
-| 11 | **Hạn chế cốt lõi** | Mô hình thuê bao SmartCA năm không phù hợp ký vãng lai | Chưa có hệ sinh thái phần mềm bệnh viện đi kèm |
-| 12 | **Mức độ đe dọa với EasyCA** | **Rất cao (Dominant Player):** Tại các bệnh viện dùng VNPT HIS | **Cơ hội lớn:** Tại các bệnh viện dùng HIS của bên thứ ba |
+| 11 | **Hạn chế cốt lõi** | Chưa có gói ký số PKI theo sự vụ tối ưu cho bệnh nhân | Chưa có hệ sinh thái phần mềm bệnh viện đi kèm |
+| 12 | **Mức độ đe dọa với EasyCA** | **Rất cao tại các bệnh viện dùng VNPT HIS:** Khó chen chân | **Cơ hội lớn tại các bệnh viện dùng HIS bên thứ ba:** Hợp tác mở |
 | 13 | **Những điểm chưa xác minh** | Lộ trình thương mại gói ký số theo sự vụ cho người bệnh | Thời gian tích hợp thực tế API EasyCA vào các hệ thống HIS |
 
 ### Chiến lược Cạnh tranh của EasyCA:
-1. **Phân khúc bệnh viện dùng HIS bên thứ ba (Non-VNPT HIS):** Nhiều công ty phần mềm y tế độc lập (ISOFH, Infomed, Nanosoft, LinkCare) e ngại tích hợp VNPT SmartCA vì VNPT HIS là đối thủ cạnh tranh trực tiếp của họ. EasyCA là giải pháp CA trung lập, đóng vai trò đối tác công nghệ lý tưởng cho các đơn vị này.
+1. **Phân khúc bệnh viện dùng HIS bên thứ ba (Non-VNPT HIS):** Nhiều công ty phần mềm y tế độc lập (ISOFH, Infomed, Nanosoft, LinkCare) e ngại tích hợp VNPT SmartCA vì VNPT HIS là đối thủ cạnh tranh trực tiếp thị phần phần mềm của họ. EasyCA là giải pháp CA trung lập, đóng vai trò đối tác công nghệ lý tưởng cho các đơn vị này.
 2. **Đóng gói giải pháp Ký số Người bệnh chuyên biệt:** Trong khi VNPT tập trung vào mảng chữ ký số doanh nghiệp và bác sĩ, EasyCA tập trung thiết kế sản phẩm "Ký số Bệnh nhân cấp tốc": eKYC nhanh gọn tại quầy tiếp đón, cấp chứng thư số theo sự vụ, chi phí thanh toán theo gói lượt ký linh hoạt cho bệnh viện.
 
 ---
@@ -128,4 +132,4 @@ Về lý thuyết công nghệ, VNPT sở hữu nền tảng SmartCA hoàn toàn
 2. Trang thông tin Dịch vụ Chữ ký số từ xa VNPT SmartCA: `smartca.vnpt.vn`.
 3. Báo cáo chuyển đổi số ngành Y tế — Bộ Y tế (`moh.gov.vn`).
 4. Danh sách các tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng được cấp phép — Trung tâm Chứng thực điện tử quốc gia (NEAC): `neac.gov.vn`.
-5. Luật Giao dịch điện tử số 20/2023/QH15, Thông tư số 13/2025/TT-BYT, Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP.
+5. Luật Giao dịch điện tử số 20/2023/QH15, Thông tư số 13/2025/TT-BYT, Nghị định số 23/2025/NĐ-CP (Điều 36, 43), Luật An toàn thông tin mạng số 86/2015/QH13 (Nghị định 85/2016/NĐ-CP) và Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15.

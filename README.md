@@ -64,4 +64,5 @@ Trong hồ sơ bệnh án điện tử (EMR), chữ ký hoặc xác nhận đi�
 - 🌐 [05 - VNPT HIS & Dịch vụ VNPT SmartCA](competitors/05-vnpt-his.md)
 - 📩 [06 - FPT eHospital (Xác thực OTP SMS & eSign)](competitors/06-fpt-ehospital.md)
 - ✍️ [07 - Mô hình Ký tay Tablet Cảm ứng](competitors/07-ky-tay-tablet.md)
+- 🛡️ [08 - Báo cáo Kiểm chứng Toàn diện & Đối chiếu Nguồn Dữ liệu](competitors/08-BAO-CAO-KIEM-CHUNG.md)
 - 📋 [00 - Mục lục & Cấu trúc Dữ liệu](competitors/00-INDEX.md)

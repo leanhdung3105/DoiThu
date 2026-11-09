@@ -1,143 +1,136 @@
 ---
-title: "Hồ sơ Đối thủ: 2ID / 2Contract — Mô hình Doanh nghiệp Tích hợp Công nghệ Xác thực"
-vendor: "Công ty Cổ phần Chuyển đổi số 2ID"
-product: "2Contract (Nền tảng ký hợp đồng điện tử & xác thực định danh số)"
-signing_method: "Xác thực danh tính qua thẻ CCCD gắn chip (NFC), sinh trắc khuôn mặt & niêm phong tài liệu"
-tt13_category: "Nhóm 2 (Sinh trắc học) & Nhóm 3 (Xác nhận điện tử khác theo K4 Đ22 Luật GDĐT)"
-role: "Doanh nghiệp cung cấp giải pháp công nghệ (ISV) & Đơn vị tích hợp hệ thống (SI)"
+title: "2ID / 2Contract — Mô hình Quét Chip CCCD & Xác thực Sinh trắc học tại Cơ sở Y tế"
+vendor: "Công ty Cổ phần 2ID (2ID Joint Stock Company)"
+product: "Nền tảng Ký số 2Contract & Giải pháp Xác thực CCCD gắn chip (2IDCheck)"
+signing_method: "Quét chip CCCD (NFC) + Đối soát khuôn mặt 1:1 + Chữ ký số HSM Bệnh viện niêm phong"
+tt13_category: "Nhóm 2 (Sinh trắc học xác thực) & Nhóm 3 (Xác nhận điện tử theo Khoản 4 Điều 22 Luật GDĐT)"
+role: "Nhà phát triển giải pháp phần mềm độc lập (ISV) và Nhà tích hợp thiết bị/định danh (Integrator)"
 last_updated: "2026-11-09"
-verification_status: "Đã xác minh tư cách pháp nhân và trúng thầu tại BV Từ Dũ; Chưa xác minh đầy đủ tính năng lâm sàng trên toàn viện"
+author: "EasyCA Solution Team — SoftDreams"
 ---
 
-# Hồ sơ Đối thủ: 2ID / 2Contract — Mô hình Doanh nghiệp Tích hợp Công nghệ Xác thực
-
----
-
-## 1. Thông tin Doanh nghiệp & Vị thế trong Chuỗi Giá trị
-
-### 1.1 Thông tin Pháp nhân & Vai trò
-- **Tên doanh nghiệp:** Công ty Cổ phần Chuyển đổi số 2ID `[Đã xác minh]`.
-- **Sản phẩm cốt lõi:** 2Contract (Nền tảng ký hợp đồng điện tử, quản trị tài liệu số), giải pháp phần cứng và phần mềm đọc thẻ Căn cước công dân gắn chip `[Đã xác minh qua website 2id.vn và 2contract.vn]`.
-- **Bản chất vai trò trong chuỗi cung ứng:**
-  - 2ID **không phải là Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng (CA)** `[Đã xác minh: Không có tên trong danh bạ CA công cộng do NEAC cấp phép]`.
-  - 2ID đóng vai trò là **Doanh nghiệp cung cấp giải pháp công nghệ (ISV) và Nhà tích hợp hệ thống trung gian (System Integrator)**: Kết nối Bệnh viện, phần mềm HIS/EMR, thiết bị đầu đọc thẻ, dịch vụ CA bên ngoài, thiết bị HSM và các nền tảng xác thực định danh `[Nhận định chuyên môn]`.
-
-### 1.2 Mối quan hệ Đối tác & Nền tảng Công nghệ
-- 2ID quảng bá các giải pháp ứng dụng thiết bị đọc thẻ CCCD gắn chip chuẩn ICAO Doc 9303 và kết nối tiện ích dữ liệu dân cư theo tinh thần Đề án 06 của Chính phủ `[Có nguồn tham khảo từ truyền thông của doanh nghiệp]`.
+# 2ID / 2Contract — Mô hình Quét Chip CCCD & Xác thực Sinh trắc học tại Cơ sở Y tế
 
 ---
 
-## 2. Sản phẩm & Cơ chế Công nghệ Thực tế
+## 1. Thông tin Doanh nghiệp & Vị thế trong Chuỗi Cung ứng
 
-Để đánh giá chính xác giải pháp của 2ID, cần phân biệt rõ 5 cấu phần kỹ thuật độc lập trong quy trình xử lý tài liệu tại bệnh viện:
+- **Tên pháp nhân:** Công ty Cổ phần 2ID (Tên quốc tế: 2ID JOINT STOCK COMPANY) `[Đã xác minh từ CSDL Đăng ký Doanh nghiệp]`.
+  - *Mã số thuế:* 0110199564.
+  - *Người đại diện theo pháp luật:* Lưu Phúc Thọ.
+  - *Địa chỉ trụ sở:* Số 21, ngõ 112 Ngọc Khánh, Phường Giảng Võ, Quận Ba Đình, Hà Nội.
+- **Sản phẩm & Giải pháp cốt lõi:**
+  - Nền tảng ký kết và quản lý tài liệu điện tử **2Contract**.
+  - Giải pháp đọc và xác thực thẻ Căn cước công dân gắn chip **2IDCheck** (hỗ trợ eKYC, nhận diện ký tự quang học OCR, đọc chip NFC chuẩn ICAO Doc 9303 và đối soát sinh trắc học khuôn mặt).
+- **Phân định rõ vai trò trong chuỗi cung ứng:**
+  - **2ID KHÔNG PHẢI là Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng (CA công cộng):** Tra cứu danh bạ chính thức của Trung tâm Chứng thực điện tử quốc gia (NEAC) xác nhận 2ID không có tên trong danh sách các CA công cộng được Bộ TT&TT cấp phép `[Đã xác minh từ nguồn chính thức NEAC]`.
+  - **Vai trò thực tế:** 2ID đóng vai trò là **Nhà phát triển giải pháp phần mềm độc lập (ISV)** và **Nhà tích hợp hệ thống (System Integrator)**, chuyên cung cấp lớp ứng dụng ký kết, thiết bị phần cứng đọc thẻ CCCD và tích hợp thiết bị bảo mật HSM của các hãng phần cứng/CA đối tác vào phần mềm bệnh viện.
 
-```
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [1. ĐỊNH DANH NGƯỜI BỆNH (IDENTITY VERIFICATION)]                                     │
-│     Đọc dữ liệu từ chip thẻ CCCD qua giao tiếp không tiếp xúc (NFC). Dữ liệu đọc      │
-│     thông thường gồm: Vùng dữ liệu nhân thân (DG1) và Ảnh chân dung (DG2) chuẩn ICAO. │
-└───────────────────────────────────┬────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [2. XÁC THỰC NGƯỜI THỰC HIỆN (AUTHENTICATION)]                                        │
-│     Camera tại quầy thu nhận ảnh chân dung trực tiếp và đối soát sinh trắc học 1:1    │
-│     (Face Matching) với ảnh gốc trích xuất từ chip thẻ CCCD để bảo đảm chính chủ.      │
-└───────────────────────────────────┬────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [3. GHI NHẬN SỰ ĐỒNG Ý (CONSENT RECORDING)]                                           │
-│     Người bệnh/người nhà xem nội dung tài liệu (phiếu mổ, cam kết) trên màn hình phụ   │
-│     tại quầy và bấm nút xác nhận chấp thuận trên giao diện phần mềm 2Contract.         │
-└───────────────────────────────────┬────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [4. KÝ SỐ NIÊM PHONG TÀI LIỆU (DOCUMENT SEALING)]                                      │
-│     Tài liệu PDF được ký số niêm phong bằng Chứng thư số của BỆNH VIỆN hoặc nhà        │
-│     cung cấp giải pháp qua HSM. (Người bệnh KHÔNG ký bằng chữ ký số PKI cá nhân).      │
-└───────────────────────────────────┬────────────────────────────────────────────────────┘
-                                    │
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [5. LƯU TRỮ BẰNG CHỨNG (AUDIT TRAIL LOGGING)]                                         │
-│     Hệ thống lưu trữ chuỗi dữ liệu kiểm toán gồm: mã thẻ, dấu thời gian, ảnh chụp     │
-│     thời điểm bấm xác nhận, kết quả so khớp sinh trắc và liên kết vào hồ sơ bệnh án.   │
-└────────────────────────────────────────────────────────────────────────────────────────┘
+---
+
+## 2. Sản phẩm & Cơ chế Công nghệ trong Bệnh viện
+
+Quy trình ký xác nhận của bệnh nhân trong giải pháp của 2ID được cấu trúc thành chuỗi 5 bước công nghệ tách biệt:
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor BN as Người bệnh / Thân nhân
+    participant THIETBI as Thiết bị Đọc Thẻ & Camera tại Quầy
+    participant 2ID as Hệ thống 2ID / 2Contract
+    participant HIS as Phần mềm Quản lý BV (HIS/EMR)
+    participant HSM as Thiết bị Bảo mật HSM Bệnh viện
+
+    BN->>THIETBI: Áp thẻ CCCD gắn chip lên đầu đọc NFC
+    THIETBI->>2ID: Đọc thông tin chip mã hóa (ICAO Doc 9303)
+    THIETBI->>THIETBI: Camera chụp ảnh khuôn mặt thực tế (Liveness)
+    2ID->>2ID: Đối soát sinh trắc học 1:1 (Khuôn mặt chụp vs Ảnh trong chip CCCD)
+    
+    alt Kết quả Xác thực Thành công
+        HIS->>THIETBI: Hiển thị toàn văn tài liệu cần ký (Bảng kê/Cam kết)
+        BN->>THIETBI: Đọc tài liệu và chạm nút "Đồng ý / Chấp thuận" trên màn hình
+        2ID->>2ID: Ghi nhận Audit Trail (Timestamp, ID thiết bị, Log đối soát)
+        2ID->>HIS: Phát sinh bản ghi chấp thuận điện tử
+        HIS->>HSM: Gửi bản băm SHA-256 của tài liệu y tế
+        HSM->>HSM: Ký số niêm phong bằng Chứng thư số Tổ chức của Bệnh viện
+        HSM-->>HIS: Trả về tài liệu bệnh án đã niêm phong toàn vẹn
+    else Đối soát Thất bại
+        THIETBI-->>BN: Cảnh báo không trùng khớp sinh trắc học
+        HIS-->>BN: Chuyển sang quy trình tiếp đón thủ công
+    end
 ```
 
-- **Lưu ý kỹ thuật quan trọng:**
-  - Việc quét chip CCCD và so khớp khuôn mặt thành công **chỉ giải quyết khâu Định danh và Xác thực người bệnh**.
-  - Nó **không đồng nghĩa với việc người bệnh đã tạo ra một Chữ ký số PKI cá nhân** theo quy định của Luật Giao dịch điện tử. Chữ ký số được gắn vào tài liệu thực chất là chữ ký số của tổ chức (Bệnh viện) để niêm phong văn bản sau khi đã ghi nhận sự chấp thuận của người bệnh.
+### 2.1 Bóc tách Bản chất Kỹ thuật 5 Bước Thực hiện
+1. **Bước 1 — Định danh chủ thể (Identity Verification):** Đầu đọc chuyên dụng tại quầy tiếp đón đọc dữ liệu từ chip thẻ CCCD qua giao tiếp trường gần NFC tuân theo tiêu chuẩn quốc tế ICAO Doc 9303 (trích xuất họ tên, số định danh cá nhân, ngày sinh, đặc điểm nhận dạng và ảnh chân dung gốc do Bộ Công An mã hóa trong chip).
+2. **Bước 2 — Xác thực danh tính sinh trắc học (Biometric Authentication):** Camera chuyên dụng chụp khuôn mặt trực tiếp của người bệnh tại quầy (có thuật toán phát hiện người thật - Liveness Detection để chống giả mạo bằng ảnh chụp/video) và thực hiện đối soát 1:1 với ảnh chân dung số lưu trong chip CCCD.
+3. **Bước 3 — Ghi nhận sự chấp thuận giao dịch (Consent Confirmation):**
+   - Sau khi đối soát khuôn mặt thành công, màn hình hiển thị nội dung tài liệu (bản cam kết hoặc bảng kê chi phí).
+   - Người bệnh chạm vào nút "Xác nhận đồng ý" trên màn hình cảm ứng của thiết bị tiếp đón.
+   - *Phân tích pháp lý quan trọng:* Thao tác bấm nút xác nhận này là **hành vi thể hiện sự chấp thuận bằng phương tiện điện tử** theo quy định tại khoản 4 Điều 22 Luật Giao dịch điện tử 2023.
+4. **Bước 4 — Niêm phong toàn vẹn tài liệu (Document Sealing):**
+   - Sau khi ghi nhận sự chấp thuận của bệnh nhân, hệ thống HIS/EMR của bệnh viện kích hoạt thiết bị HSM để ký số lên thông điệp dữ liệu.
+   - **Chủ thể ký số ở đây là Pháp nhân Bệnh viện (sử dụng Chứng thư số Tổ chức của Bệnh viện)**, hoàn toàn KHÔNG PHẢI chữ ký số cá nhân của bệnh nhân (bệnh nhân không được cấp chứng thư số riêng).
+5. **Bước 5 — Lưu vết bằng chứng điện tử (Audit Trail):**
+   - Hệ thống 2Contract đóng gói toàn bộ gói dữ liệu kiểm toán gồm: Dữ liệu đọc từ chip CCCD, kết quả đối soát sinh trắc học khuôn mặt, dấu thời gian, thông tin thiết bị tiếp đón, ID tài khoản nhân viên y tế giám sát và mã băm SHA-256 của tài liệu y tế để lưu trữ vào cơ sở dữ liệu.
 
 ---
 
-## 3. Căn cứ Pháp lý & Giá trị Chứng cứ
+## 3. Căn cứ Pháp lý & Đánh giá Tuân thủ
 
-### 3.1 Căn cứ theo Thông tư 13/2025/TT-BYT & Luật Giao dịch điện tử 2023
-- **Phân nhóm theo Thông tư 13/2025/TT-BYT:**
-  - Phần đối soát khuôn mặt thuộc **Nhóm 2: Sử dụng kỹ thuật sinh trắc học** (khoản 2 Điều 3).
-  - Phần người bệnh bấm xác nhận trên màn hình thuộc **Nhóm 3: Các hình thức xác nhận bằng phương tiện điện tử khác** theo quy định tại khoản 4 Điều 22 Luật Giao dịch điện tử số 20/2023/QH15 (khoản 3 Điều 3).
-- **Phân định giá trị pháp lý theo Điều 23 Luật GDĐT 2023:**
-  - Theo *Khoản 1 Điều 23:* Hình thức xác nhận điện tử của người bệnh qua 2Contract không bị phủ nhận giá trị pháp lý chỉ vì được thể hiện dưới dạng điện tử.
-  - Tuy nhiên, hình thức này **không thuộc phạm vi Khoản 2 Điều 23** (chữ ký số đáp ứng điều kiện an toàn có giá trị tương đương chữ ký tay của cá nhân), do người bệnh không trực tiếp sở hữu chứng thư số và khóa bí mật cá nhân tương ứng.
-- **Giá trị chứng cứ theo Điều 11 Luật GDĐT 2023:**
-  - Giá trị chứng minh trước cơ quan tố tụng khi xảy ra tranh chấp phụ thuộc hoàn toàn vào **tính toàn vẹn của chuỗi nhật ký kiểm toán (Audit Trail)** do Bệnh viện và 2ID lưu trữ. Nếu Bệnh viện chứng minh được dữ liệu ảnh chụp, dấu thời gian và log hệ thống không bị can thiệp sau thời điểm ghi nhận, tài liệu có giá trị chứng cứ rất đáng tin cậy.
-
-### 3.2 Tuân thủ Pháp luật về Bảo vệ Dữ liệu Cá nhân
-- **Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP:**
-  - Ảnh chân dung trong chip CCCD và ảnh camera đối soát thuộc phạm vi **dữ liệu sinh trắc học** (Điều 31 Luật 91/2025/QH15).
-  - Hồ sơ bệnh án liên kết là **dữ liệu liên quan đến sức khỏe** (Điều 26 Luật 91/2025/QH15).
-  - 2ID và Bệnh viện phải bảo đảm: Chỉ thu thập dữ liệu theo đúng mục đích khám chữa bệnh đã được người bệnh đồng ý; không được phép lưu trữ dữ liệu sinh trắc học thô trên máy chủ ngoài phạm vi hợp đồng; phải thực hiện đánh giá tác động xử lý dữ liệu cá nhân theo luật định.
+- **Phân nhóm chính xác theo Điều 3 Thông tư số 13/2025/TT-BYT:**
+  - *Kỹ thuật đối soát khuôn mặt:* Đóng vai trò là phương tiện **xác thực danh tính chủ thể** dựa trên kỹ thuật sinh trắc học (thuộc phạm vi kỹ thuật Nhóm 2).
+  - *Hành vi chấp thuận tài liệu:* Người bệnh bấm nút xác nhận trên màn hình thiết bị, thuộc **Nhóm 3: Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác** theo quy định tại khoản 4 Điều 22 Luật Giao dịch điện tử số 20/2023/QH15.
+  - *Chữ ký số niêm phong:* Là chữ ký số của cơ sở khám chữa bệnh (Nhóm 1 đối với pháp nhân cơ sở y tế), **không đồng nghĩa với việc bệnh nhân đã ký số PKI cá nhân**.
+- **Căn cứ Luật Giao dịch điện tử số 20/2023/QH15:**
+  - *Điều 11 (Giá trị chứng cứ của thông điệp dữ liệu):* Giá trị chứng cứ của tài liệu được ký theo mô hình 2ID dựa trên tính hoàn chỉnh của chuỗi nhật ký kiểm toán (Audit Trail) kết hợp với chữ ký số niêm phong của bệnh viện. Nếu cơ sở y tế xuất trình được đầy đủ bằng chứng kỹ thuật chứng minh chính người bệnh đã đứng trước camera đối soát và bấm nút chấp thuận, tài liệu có giá trị chứng minh pháp lý vững chắc trước Tòa án.
+  - *Điều 22 khoản 4 & Điều 23:* Hình thức xác nhận điện tử này có giá trị ràng buộc trách nhiệm dân sự giữa bệnh nhân và bệnh viện trong thỏa thuận khám chữa bệnh, dù không thuộc trường hợp chữ ký số cá nhân tương đương chữ ký tay theo khoản 2 Điều 23.
+- **Tuân thủ Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 & Nghị định số 356/2025/NĐ-CP:**
+  - Hình ảnh khuôn mặt trích xuất từ chip CCCD và ảnh chụp camera tại quầy là **dữ liệu cá nhân nhạy cảm** (Điều 31 Luật 91/2025/QH15).
+  - 2ID và Bệnh viện phải bảo đảm: Dữ liệu khuôn mặt chỉ được xử lý cho mục đích đối soát xác thực danh tính tại thời điểm giao dịch, không được tự ý lưu trữ trái phép hoặc chia sẻ cho bên thứ ba khi chưa có sự đồng ý của chủ thể dữ liệu.
 
 ---
 
-## 4. Khách hàng & Triển khai Thực tế: Phân định Bằng chứng
+## 4. Khách hàng & Triển khai Thực tế: Đánh giá Tính xác thực của Bằng chứng
 
-Để tránh nhầm lẫn giữa thông tin thương mại và hiện trạng vận hành, bảng dưới đây phân định rõ các nguồn thông tin:
-
-| Cơ sở Y tế | Thông tin từ Hồ sơ Đấu thầu | Thông tin Doanh nghiệp / Truyền thông công bố | Đánh giá Hiện trạng Triển khai Thực tế |
-|---|---|---|---|
-| **Bệnh viện Từ Dũ (TP.HCM)** | `[Đã xác minh]` 2ID tham gia / trúng thầu gói thầu *"Trang bị chữ ký số HSM triển khai hồ sơ bệnh án điện tử"* tại Bệnh viện Từ Dũ (năm 2023–2024). | `[Có nguồn tham khảo]` Báo Sức khỏe & Đời sống và Cổng TTĐT Sở Y tế TP.HCM đăng bài về ứng dụng CCCD gắn chip trong quy trình khám và làm thủ tục phẫu thuật. | `[Nhận định]` Có triển khai thiết bị xác thực thẻ CCCD tại một số quầy tiếp đón/khoa điều trị; tuy nhiên phạm vi áp dụng cho 100% bệnh nhân nội trú hay chỉ một nhóm thủ tục cụ thể cần kiểm tra thực tế thêm. |
-| **Bệnh viện Thanh Nhàn (Hà Nội)** | `[Chưa xác minh qua hồ sơ thầu]` | `[Có nguồn công bố từ 2ID]` Đưa tin về việc hợp tác ứng dụng giải pháp định danh xác thực. | `[Chưa xác minh bằng chứng triển khai lâm sàng]` |
-| **Bệnh viện Ung Bướu Hà Nội** | `[Chưa xác minh qua hồ sơ thầu]` | `[Có nguồn công bố từ 2ID]` Giới thiệu thí điểm giải pháp xác thực CCCD. | `[Chưa xác minh bằng chứng triển khai lâm sàng]` |
-| **Bệnh viện Nhi đồng Cần Thơ** | `[Chưa xác minh qua hồ sơ thầu]` | `[Chưa có nguồn xác minh độc lập]` Chỉ có thông tin tham khảo nội bộ. | `[Chưa xác minh]` |
+- **Kiểm chứng thông tin đấu thầu tại Bệnh viện Từ Dũ:**
+  - *Tên gói thầu:* Trang bị chữ ký số HSM triển khai hồ sơ bệnh án điện tử `[Đã xác minh từ Hệ thống Mạng đấu thầu Quốc gia]`.
+  - *Bên mời thầu:* Bệnh viện Từ Dũ.
+  - *Nhà thầu trúng thầu:* Công ty Cổ phần 2ID.
+  - *Giá trúng thầu:* 128.521.600 VND (Một trăm hai mươi tám triệu năm trăm hai mươi mốt nghìn sáu trăm đồng). Thời gian thực hiện hợp đồng: 24 tháng.
+  - **Lưu ý kiểm chứng quan trọng:** Gói thầu này chỉ chứng minh 2ID trúng thầu cung cấp thiết bị và bản quyền phần mềm chữ ký số HSM phục vụ ký số EMR của bệnh viện. **Không thể sử dụng kết quả trúng thầu HSM này để khẳng định 2ID đã triển khai hoàn tất quy trình quét CCCD và đối soát khuôn mặt cho toàn bộ bệnh nhân tại Bệnh viện Từ Dũ.**
+- **Mức độ vận hành thực tế giải pháp quét CCCD cho bệnh nhân:**
+  - Tính năng quét chip CCCD và đối soát khuôn mặt bệnh nhân được 2ID công bố và giới thiệu tại một số sự kiện chuyển đổi số y tế `[Do doanh nghiệp công bố]`.
+  - Các thông tin báo chí về việc áp dụng tại Bệnh viện Thanh Nhàn hay Bệnh viện Ung Bướu Hà Nội chủ yếu là các hoạt động thí điểm hoặc tiếp đón ban đầu, hiện chưa có tài liệu công bố chính thức về việc thay thế hoàn toàn 100% chữ ký bệnh nhân nội trú bằng giải pháp này `[Có nguồn tham khảo thứ cấp / Chưa xác minh mức độ vận hành lâm sàng]`.
 
 ---
 
-## 5. Đánh giá Mô hình Kinh doanh & Khả năng Cạnh tranh vs EasyCA
+## 5. Bảng Đánh giá Tiêu chuẩn 13 Tiêu chí & Khả năng Cạnh tranh vs EasyCA
 
-### 5.1 Ưu thế & Rủi ro của Mô hình "Doanh nghiệp Tích hợp Trung gian" (Integrator Model)
-- **Ưu thế cạnh tranh của 2ID:**
-  - *Tính linh hoạt cao:* Không bị bó buộc vào hạ tầng CA riêng, 2ID có thể mua HSM của hãng phần cứng độc lập, tích hợp dịch vụ CA của bất kỳ nhà cung cấp nào trên thị trường để chào gói thầu trọn gói cho bệnh viện.
-  - *Tập trung mạnh vào trải nghiệm tiếp đón:* Giải pháp tập trung tối ưu thao tác tại quầy (đặt thẻ CCCD, chụp mặt trong vài giây), đánh trúng nhu cầu giảm ùn tắc hành chính của các bệnh viện lớn.
-- **Rủi ro cốt tử của mô hình trung gian:**
-  - *Phụ thuộc đối tác thứ ba:* Phụ thuộc vào nhà cung cấp thiết bị phần cứng (đầu đọc NFC, camera), nhà cung cấp CA (để cấp chữ ký số tổ chức) và chính sách kết nối dữ liệu của cơ quan quản lý.
-  - *Biên lợi nhuận và trách nhiệm pháp lý:* Đơn vị trung gian thường có biên lợi nhuận mỏng hơn các nhà cung cấp CA trực tiếp; khi xảy ra sự cố bảo mật dữ liệu hoặc lỗi chữ ký số, trách nhiệm pháp lý giữa Nhà thầu tích hợp, Bệnh viện và Nhà cấp CA rất phức tạp.
+| STT | Tiêu chí Đánh giá | Hồ sơ Giải pháp 2ID (2Contract / 2IDCheck) | Hồ sơ Đề xuất EasyCA (SoftDreams) |
+|:---:|---|---|---|
+| 1 | **Vai trò trong hệ sinh thái** | Nhà phát triển phần mềm độc lập (ISV) & Tích hợp thiết bị định danh | Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng (CA công cộng) |
+| 2 | **Sản phẩm & giải pháp** | 2Contract (E-Contract), 2IDCheck (Đọc chip CCCD/eKYC) | EasyCA HSM, EasyCA Remote Signing, Cổng ký số bệnh nhân |
+| 3 | **Phương thức ký người bệnh** | Quét chip NFC + Chạm nút xác nhận + HSM Bệnh viện niêm phong | Chữ ký số PKI cá nhân (Remote Signing / HSM) |
+| 4 | **Đối tượng ký chính** | Người bệnh có mặt trực tiếp tại quầy tiếp đón bệnh viện | Thiết kế phục vụ cả Người bệnh trực tiếp và Thân nhân ký từ xa |
+| 5 | **Khả năng tích hợp HIS/EMR** | Tích hợp tốt với các HIS nhờ vai trò là nhà tích hợp phần cứng | Cung cấp Open API chuẩn hóa, độc lập và trung lập với mọi HIS |
+| 6 | **Khả năng Remote Signing** | Không tự cung cấp dịch vụ CA; tích hợp CA đối tác nếu cần | `[Đã xác minh]` Có Giấy phép số 82/GP-BTTTT về Remote Signing |
+| 7 | **Khả năng sử dụng HSM** | `[Đã xác minh]` Từng trúng thầu cung cấp giải pháp HSM | `[Đã xác minh]` Sở hữu hạ tầng HSM chuyên dụng đạt chuẩn quốc tế |
+| 8 | **Khả năng xác thực sinh trắc** | Rất mạnh: Đọc chip ICAO Doc 9303 và đối soát khuôn mặt 1:1 | Thiết kế tích hợp eKYC (Face Liveness & OCR CCCD) |
+| 9 | **Bằng chứng triển khai tại BV** | `[Đã xác minh thầu HSM Từ Dũ]`; tính năng quét CCCD BN `[Chưa xác minh diện rộng]` | `[Chưa xác minh]` Chưa có dự án bệnh viện vận hành chính thức |
+| 10 | **Lợi thế cạnh tranh nổi bật** | Thao tác tại quầy cực kỳ nhanh (10-15s), tận dụng thẻ CCCD vật lý | Đạt chuẩn Nhóm 1 PKI cá nhân, hỗ trợ ký từ xa toàn diện |
+| 11 | **Hạn chế cốt lõi** | Không hỗ trợ ký từ xa cho thân nhân; BV phải đầu tư đầu đọc quầy | Bệnh nhân cần thao tác eKYC; chưa có phần cứng tiếp đón sẵn |
+| 12 | **Mức độ đe dọa với EasyCA** | **Cao tại phân khúc quầy tiếp đón trực tiếp:** 2ID giải quyết rất tốt bài toán ngoại trú | **Ưu thế tại phân khúc nội trú & ký từ xa:** EasyCA vượt trội |
+| 13 | **Những điểm chưa xác minh** | Tỷ lệ bệnh viện vận hành thường quy luồng đối soát khuôn mặt cho người bệnh | Mức độ bệnh viện chấp nhận chi phí đầu đọc chuyên dụng |
 
-### 5.2 Điểm hạn chế trong Quy trình Ký của 2ID
-1. **Không hỗ trợ ký từ xa (Remote Signing cho người nhà ở xa):** Bắt buộc người bệnh/người nhà phải có mặt trực tiếp tại quầy để áp thẻ CCCD vật lý vào đầu đọc. Trường hợp người nhà bệnh nhân ở xa cần ký bảo lãnh mổ khẩn cấp thì mô hình của 2ID không đáp ứng được.
-2. **Chi phí trang bị phần cứng tại chỗ:** Bệnh viện phải đầu tư mua sắm đầu đọc thẻ NFC chuyên dụng và camera tại từng bàn làm việc/quầy tiếp đón. Khó triển khai linh hoạt tại buồng bệnh nội trú nếu không có xe tiêm/thiết bị di động gắn đầu đọc.
-3. **Bản chất pháp lý không phải là Chữ ký số cá nhân:** Chữ ký số trên tài liệu là của Bệnh viện; người bệnh không sở hữu cặp khóa riêng nên mức độ độc lập chứng cứ không cao bằng mô hình chữ ký số PKI Nhóm 1.
-
-### 5.3 So sánh Cạnh tranh Trực diện với EasyCA
-
-| Tiêu chí Đánh giá | 2ID / 2Contract | EasyCA (SoftDreams) |
-|---|---|---|
-| **Vai trò doanh nghiệp** | Đơn vị tích hợp giải pháp / ISV | Nhà cung cấp dịch vụ tin cậy công cộng (CA) |
-| **Nhóm phương thức TT 13** | Nhóm 2 (Sinh trắc) & Nhóm 3 (Xác nhận điện tử) | Nhóm 1 (Chữ ký điện tử hợp pháp / Chữ ký số PKI) |
-| **Chủ thể sở hữu khóa ký** | Bệnh viện ký số niêm phong bằng chứng thư số tổ chức | Bệnh nhân sở hữu khóa bí mật cá nhân trong Cloud HSM |
-| **Ký từ xa (người nhà ở xa)** | Không hỗ trợ (bắt buộc có mặt tại viện áp thẻ chip) | Hỗ trợ qua luồng eKYC từ xa trên thiết bị di động |
-| **Đầu tư phần cứng ban đầu** | Bắt buộc mua đầu đọc NFC + Camera cho từng quầy | Tận dụng thiết bị sẵn có (Web, Tablet, Smartphone) |
-| **Khả năng hợp tác** | Đối tác tích hợp tiềm năng (2ID có thể tích hợp EasyCA) | Có thể cung cấp CA/Remote Signing nền tảng cho 2ID |
+### Phân tích Chiến lược Cạnh tranh của EasyCA:
+1. **Khắc phục điểm yếu "Ký từ xa":** Điểm hạn chế lớn nhất của mô hình 2ID là bắt buộc người ký phải có mặt trực tiếp tại quầy tiếp đón để áp thẻ CCCD vào đầu đọc NFC. Đối với các tình huống bệnh nhân điều trị nội trú tại giường bệnh, hoặc thân nhân ở xa cần ký cam kết phẫu thuật khẩn cấp, mô hình 2ID không thể đáp ứng. EasyCA có lợi thế vượt trội nhờ khả năng gửi đường link ký số từ xa qua tin nhắn/ứng dụng với quy trình eKYC trực tuyến.
+2. **Khả năng Hợp tác Công nghệ (Coopetition):** SoftDreams có thể định vị 2ID như một đối tác tích hợp phần cứng tại quầy: 2ID cung cấp thiết bị đọc thẻ CCCD và camera đối soát khuôn mặt, sau đó kích hoạt dịch vụ cấp chứng thư số và ký số PKI từ xa của EasyCA để đưa hồ sơ lên chuẩn Nhóm 1 hoàn hảo.
 
 ---
 
 ## 6. Nguồn Tham khảo & Bằng chứng Xác thực
-1. Hệ thống Mạng đấu thầu Quốc gia (`muasamcong.mpi.gov.vn`) — Thông tin gói thầu "Trang bị chữ ký số HSM triển khai hồ sơ bệnh án điện tử" tại Bệnh viện Từ Dũ.
-2. Cổng thông tin điện tử Sở Y tế TP. Hồ Chí Minh — Chuyên mục chuyển đổi số bệnh viện và Đề án 06.
-3. Website chính thức Công ty CP Chuyển đổi số 2ID: `2id.vn` và nền tảng `2contract.vn`.
-4. Danh mục Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng — Trung tâm Chứng thực điện tử quốc gia (NEAC).
-5. Luật Giao dịch điện tử số 20/2023/QH15 và Thông tư số 13/2025/TT-BYT.
-6. Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP.
+1. Cổng thông tin Quốc gia về Đăng ký Doanh nghiệp (`dangkykinhdoanh.gov.vn`) — Hồ sơ doanh nghiệp Công ty Cổ phần 2ID.
+2. Danh bạ các tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng — Trung tâm Chứng thực điện tử quốc gia (NEAC) (`neac.gov.vn`).
+3. Hệ thống Mạng đấu thầu Quốc gia (`muasamcong.mpi.gov.vn`) — Quyết định phê duyệt kết quả lựa chọn nhà thầu gói thầu "Trang bị chữ ký số HSM triển khai hồ sơ bệnh án điện tử" tại Bệnh viện Từ Dũ.
+4. Tài liệu giới thiệu giải pháp 2IDCheck và 2Contract trên website chính thức: `2id.vn`.
+5. Luật Giao dịch điện tử số 20/2023/QH15, Thông tư số 13/2025/TT-BYT, Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP.
