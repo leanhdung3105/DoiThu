@@ -1,5 +1,4 @@
-* [📖 6 Hình thức Ký Thực tế](competitors/00-cac-hinh-thuc-ky-thuc-te.md)
-* [📊 Bảng So sánh](competitors/00-tong-quan-so-sanh.md)
+* [📊 Tổng quan & 6 Hình thức Ký](competitors/00-tong-quan-so-sanh.md)
 * [⭐ EasyCA PKI](competitors/01-easyca-softdreams.md)
 * [⚖️ Căn cứ Pháp lý (TT 13)](competitors/00-tong-quan-so-sanh.md?id=_1-khung-phap-ly-tham-chieu-thong-tu-132025tt-byt-dieu-3)
 * [🌐 SoftDreams](https://softdreams.vn ':target=_blank')

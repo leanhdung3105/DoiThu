@@ -1,7 +1,6 @@
 - **Tổng quan Nghiên cứu**
-  - [📖 6 Hình thức Ký Bệnh nhân Thực tế](competitors/00-cac-hinh-thuc-ky-thuc-te.md)
-  - [📊 Dashboard So sánh Đối thủ](competitors/00-tong-quan-so-sanh.md)
-  - [📋 Mục lục & Dữ liệu](competitors/00-INDEX.md)
+  - [📊 Tổng quan & 6 Hình thức Ký](competitors/00-tong-quan-so-sanh.md)
+  - [📋 Mục lục Chi tiết](competitors/00-INDEX.md)
 
 - **Sản phẩm của chúng ta**
   - [⭐ EasyCA (SoftDreams) - Chuẩn PKI](competitors/01-easyca-softdreams.md)
