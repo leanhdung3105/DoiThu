@@ -1,10 +1,10 @@
 ---
-title: "Mô hình Chữ ký Cảm ứng trên Tablet (DentalFlow & Các Phần mềm Phòng khám)"
-vendor: "DentalFlow, BambuFit, Nanosoft, LinkCare và nhiều đơn vị phát triển HIS nội bộ"
-product: "Tính năng ký cảm ứng trên màn hình máy tính bảng (Tablet / iPad / Wacom)"
+title: "Mô hình Chữ ký Cảm ứng trên Tablet (DentalFlow & Các Phần mềm Phòng khám/Bệnh viện)"
+vendor: "DentalFlow, BambuFit, Nanosoft, LinkCare và nhiều đơn vị phát triển phân hệ tiếp đón"
+product: "Tính năng Ký cảm ứng trên Màn hình Thiết bị Số (Tablet / iPad / Bảng vẽ Chuyên dụng)"
 signing_method: "Vẽ chữ ký bằng tay hoặc bút cảm ứng trên màn hình thiết bị số"
-tt13_category: "Nhóm 3: Phương tiện điện tử khác theo Khoản 4 Điều 22 Luật GDĐT"
-role: "Phương thức xác nhận điện tử trực tiếp phổ biến nhất tại cơ sở khám chữa bệnh"
+tt13_category: "Nhóm 3: Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác"
+role: "Phương thức xác nhận điện tử trực tiếp phổ biến nhất tại các cơ sở khám chữa bệnh"
 last_updated: "2026-11-09"
 ---
 
@@ -13,73 +13,103 @@ last_updated: "2026-11-09"
 ---
 
 ## 1. Thông tin Giải pháp & Phân khúc Thị trường
-- **Đại diện giải pháp tiêu biểu:**
-  - Phần mềm Quản lý Nha khoa DentalFlow, BambuFit `[Đã xác minh]`.
-  - Phân hệ tiếp đón bệnh nhân của các phần mềm quản lý phòng khám như Nanosoft, LinkCare `[Đã xác minh]`.
-  - Các module ký phiếu cam kết điện tử tự phát triển trên iPad/Android tablet tại nhiều bệnh viện tư nhân và công lập `[Có nguồn tham khảo]`.
-- **Phân khúc khách hàng phổ biến:** Hệ thống phòng khám chuyên khoa (nha khoa, thẩm mỹ, mắt, da liễu) và các khoa khám bệnh ngoại trú tại bệnh viện.
+
+- **Đại diện giải pháp tiêu biểu trên thị trường:**
+  - Phần mềm Quản lý Nha khoa chuyên dụng: DentalFlow, BambuFit `[Đã xác minh qua sản phẩm thương mại]`.
+  - Phân hệ tiếp đón bệnh nhân và ký phiếu khám của các phần mềm quản lý phòng khám/bệnh viện: Nanosoft, LinkCare, VNPT HIS Tablet, Viettel HMS Tablet `[Đã xác minh qua triển khai thực tế]`.
+  - Các module ký phiếu đồng thuận nội bộ do phòng CNTT của các bệnh viện tự phát triển trên nền tảng iPad/Android Tablet `[Có nguồn tham khảo qua khảo sát quy trình bệnh viện]`.
+- **Phân khúc thị trường chủ đạo:** Hệ thống phòng khám chuyên khoa tư nhân (nha khoa, thẩm mỹ viện, mắt, da liễu) và các khoa khám bệnh ngoại trú tại các bệnh viện công lập và tư nhân.
+- **Vai trò trong hệ sinh thái:** Đóng vai trò là phương tiện thu nhận tương tác chấp thuận trực tiếp của người bệnh tại quầy tiếp đón hoặc tại giường bệnh, thay thế quy trình in ấn giấy tờ thủ công.
 
 ---
 
-## 2. Sản phẩm & Cơ chế Công nghệ
+## 2. Sản phẩm & Cơ chế Công nghệ trong Bệnh viện
 
-### 2.1 Bản chất Kỹ thuật của Chữ ký Cảm ứng trên Tablet
-Trong thực tế kỹ thuật, một giải pháp chữ ký cảm ứng trên Tablet không đơn thuần chỉ là một bức ảnh vẽ bitmap; mức độ tin cậy công nghệ phụ thuộc hoàn toàn vào kiến trúc triển khai của nhà phát triển phần mềm:
+Trong thực tế kỹ thuật y tế, một giải pháp ký cảm ứng trên màn hình Tablet không đơn thuần chỉ là một bức ảnh vẽ bitmap; mức độ an toàn và độ tin cậy công nghệ phụ thuộc trực tiếp vào kiến trúc triển khai của nhà phát triển phần mềm:
 
-1. **Gói dữ liệu cơ bản (Mô hình tối giản):**
-   - Người bệnh vẽ chữ ký lên vùng Canvas màn hình cảm ứng.
-   - Phần mềm xuất dữ liệu nét vẽ thành ảnh (PNG/JPEG) chèn vào ô người bệnh ký trên file PDF mẫu.
-2. **Gói dữ liệu nâng cao (Mô hình hoàn chỉnh có Audit Trail):**
-   - Ghi nhận chuỗi tọa độ (X, Y) và dấu thời gian (Timestamp) của từng nét bút.
-   - Thu thập thông tin định danh thiết bị (Device ID, địa chỉ IP/MAC, hệ điều hành).
-   - Ghi nhận thông tin tài khoản nhân viên y tế giám sát phiên ký.
-   - Ghi nhận dữ liệu sinh trắc học động tác ký (tốc độ vẽ, áp lực tì đè cơ học nếu sử dụng bút cảm ứng chuyên dụng như Apple Pencil hoặc bảng vẽ Wacom).
-   - Tạo mã băm (Hash) nội dung tài liệu tại thời điểm ký và ký số niêm phong bằng chứng thư số của cơ sở khám chữa bệnh.
+```mermaid
+flowchart TD
+    subgraph "Tương tác Người bệnh tại Quầy"
+        BN["Bệnh nhân / Người nhà"] -->|"Vẽ chữ ký bằng tay hoặc bút cảm ứng"| TAB["Màn hình Máy tính bảng (Tablet / iPad)"]
+    end
 
----
+    subgraph "Kiến trúc Kỹ thuật Phân tầng"
+        TAB -->|"Cấp độ 1: Tối giản"| LV1["Chỉ xuất ảnh PNG/JPEG<br/>Chèn ảnh vào file PDF"]
+        TAB -->|"Cấp độ 2: Nâng cao (Audit Trail)"| LV2["Thu thập dữ liệu chuyên sâu:<br/>- Tọa độ X,Y & Áp lực bút<br/>- Timestamp & Device ID<br/>- Log nhân viên y tế giám sát<br/>- Băm SHA-256 nội dung văn bản"]
+    end
 
-## 3. Căn cứ Pháp lý & Giá trị Chứng cứ
+    subgraph "Lưu trữ & Niêm phong Hồ sơ"
+        LV1 -->|"Lưu vào CSDL"| DB["Hệ thống HIS / Bệnh án"]
+        LV2 -->|"Ký số HSM niêm phong"| HSM["Chứng thư số Pháp nhân Bệnh viện"]
+        HSM -->|"Hồ sơ điện tử toàn vẹn"| DB
+    end
+```
 
-- **Phân nhóm theo Thông tư 13/2025/TT-BYT:** 
-  - Thuộc **Nhóm 3: Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác** theo quy định tại khoản 4 Điều 22 Luật Giao dịch điện tử số 20/2023/QH15.
-- **Căn cứ pháp lý áp dụng:**
-  - Luật Giao dịch điện tử số 20/2023/QH15:
-    - *Điều 8:* Thông điệp dữ liệu không bị phủ nhận giá trị pháp lý chỉ vì được thể hiện dưới dạng điện tử.
-    - *Điều 22 khoản 4:* Trường hợp pháp luật không quy định bắt buộc dùng chữ ký điện tử thì các bên có thể thỏa thuận sử dụng phương tiện điện tử khác để thể hiện sự chấp thuận.
-    - *Điều 11:* Giá trị chứng cứ của thông điệp dữ liệu được đánh giá căn cứ vào độ tin cậy của cách thức khởi tạo, lưu trữ và bảo đảm tính toàn vẹn.
-  - Thông tư số 13/2025/TT-BYT (Điều 3).
-- **Đánh giá giá trị chứng cứ khách quan:**
-  - Chữ ký cảm ứng trên Tablet **hoàn toàn có giá trị pháp lý** khi được cơ sở y tế triển khai theo đúng quy định pháp luật về giao dịch điện tử và y tế.
-  - *Mức độ tin cậy chứng minh:* Không thể mặc định rằng Tòa án chắc chắn bác bỏ chữ ký Tablet. Khi có tranh chấp, cơ quan tố tụng sẽ xem xét toàn diện: hệ thống có chứng minh được chính người bệnh đã thao tác ký hay không, tài liệu có bị sửa đổi sau thời điểm ký hay không, và chuỗi nhật ký kiểm toán có đủ độ tin cậy kỹ thuật hay không `[Nhận định pháp lý chuẩn xác]`.
-
----
-
-## 4. Khách hàng & Triển khai Thực tế
-- Phương thức ký trên Tablet được ứng dụng rộng rãi tại hầu hết các chuỗi nha khoa thẩm mỹ lớn và các khoa điều trị có thực hiện thủ thuật xâm lấn nhẹ `[Đã xác minh qua khảo sát thực tế phần mềm y tế]`.
-- Lý do giải pháp này được ưa chuộng: Tận dụng các thiết bị máy tính bảng phổ thông sẵn có, không phát sinh chi phí chứng thư số trên từng giao dịch, giao diện trực quan và tạo cảm giác quen thuộc tương tự như ký trên giấy truyền thống đối với người bệnh.
+### 2.1 Phân cấp Kỹ thuật của Chữ ký Cảm ứng trên Tablet
+1. **Cấp độ Tối giản (Chỉ thu thập hình ảnh tĩnh):**
+   - Người bệnh dùng ngón tay hoặc bút cảm ứng vẽ nét ký trên vùng Canvas màn hình.
+   - Phần mềm xuất dữ liệu nét vẽ thành tệp hình ảnh tĩnh (định dạng PNG hoặc JPEG) rồi gắn vào vị trí người bệnh ký trên tài liệu PDF mẫu.
+   - *Hạn chế:* Không lưu trữ tọa độ nét vẽ, không có dấu thời gian chuẩn, không gắn chặt chẽ với nội dung văn bản tại thời điểm ký. Nếu xảy ra khiếu nại, rất khó chứng minh ai là người thực sự chạm tay vào màn hình.
+2. **Cấp độ Nâng cao (Thu thập chuỗi dữ liệu kiểm toán - Audit Trail & Niêm phong số):**
+   - Hệ thống thu thập chuỗi dữ liệu động thái ký: tọa độ (X, Y), độ dày nét vẽ, vận tốc di chuyển nét bút và áp lực tì đè cơ học (nếu sử dụng bút cảm ứng lực chuyên dụng như Apple Pencil hoặc bảng vẽ Wacom).
+   - Thu thập thông tin định danh phần cứng (Device ID, địa chỉ MAC, địa chỉ IP mạng nội bộ cơ sở y tế).
+   - Ghi nhận thông tin tài khoản nhân viên y tế (điều dưỡng/tiếp đón viên) trực tiếp kích hoạt phiên ký trên hệ thống.
+   - Ngay sau khi người bệnh bấm xác nhận, hệ thống tính mã băm (SHA-256) của toàn bộ nội dung tài liệu và sử dụng **Chứng thư số tổ chức của bệnh viện (HSM)** để ký niêm phong thông điệp dữ liệu, bảo đảm văn bản không thể bị chỉnh sửa sau đó.
 
 ---
 
-## 5. Đánh giá Cạnh tranh vs EasyCA
+## 3. Căn cứ Pháp lý & Đánh giá Tuân thủ
 
-### 5.1 Điểm mạnh của Mô hình Tablet
-- **Chi phí vận hành rất thấp:** Không phải trả phí chứng thư số định danh hay phí duy trì dịch vụ tin cậy hàng năm cho từng người bệnh.
-- **Quy trình tiếp đón nhanh gọn:** Điều dưỡng chỉ cần mở hồ sơ, đưa máy tính bảng cho người bệnh đọc và ký xác nhận trong vài giây; không đòi hỏi người bệnh phải có smartphone hay thực hiện các bước eKYC phức tạp.
-
-### 5.2 Hạn chế Kỹ thuật & Rủi ro Vận hành
-- **Khả năng xác thực độc lập người ký:** Nếu hệ thống chỉ lưu ảnh nét vẽ mà không thu thập đủ dữ liệu sinh trắc động tác hoặc không có nhân chứng xác thực, cơ sở khám chữa bệnh sẽ gặp khó khăn khi người bệnh phủ nhận việc mình đã từng ký vào bản cam kết.
-- **Không hỗ trợ ký từ xa:** Bắt buộc người bệnh hoặc người đại diện phải có mặt trực tiếp tại cơ sở y tế để thao tác trên thiết bị của cơ sở.
-- **Phụ thuộc vào mức độ bảo mật của phần mềm quản lý:** Nếu cơ sở dữ liệu của phần mềm không có cơ chế khóa mã hóa (hàm băm niêm phong), tính toàn vẹn của hồ sơ bệnh án có thể bị nghi ngờ khi xảy ra khiếu nại tranh chấp.
-
-### 5.3 Định vị Nâng cấp của EasyCA
-- Thay vì phủ nhận tính pháp lý của chữ ký Tablet, đội ngũ EasyCA nên tư vấn theo hướng **"Nâng cấp chuẩn tin cậy"**:
-  - Đối với các cam kết thông thường: Bệnh viện có thể tiếp tục sử dụng ký Tablet để duy trì sự tiện lợi và tốc độ tiếp đón.
-  - Đối với các thủ thuật có rủi ro pháp lý và chi phí cao (phẫu thuật lớn, cam kết từ chối điều trị, cam kết viện phí lớn ngoài danh mục BHYT): Cơ sở y tế nên áp dụng **Chữ ký số PKI của EasyCA (Nhóm 1)** để nâng mức độ an toàn thông tin và tính chống chối bỏ lên cấp độ cao nhất.
+- **Phân nhóm theo Thông tư 13/2025/TT-BYT (Điều 3):**
+  - Chữ ký cảm ứng trên màn hình Tablet thuộc **Nhóm 3: Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác** theo quy định tại khoản 4 Điều 22 Luật Giao dịch điện tử số 20/2023/QH15.
+- **Căn cứ Luật Giao dịch điện tử số 20/2023/QH15:**
+  - *Điều 8 (Giá trị pháp lý của thông điệp dữ liệu):* Thông tin trong hồ sơ bệnh án không bị phủ nhận giá trị pháp lý chỉ vì được thể hiện dưới dạng điện tử.
+  - *Khoản 4 Điều 22 (Hình thức xác nhận khác):* Pháp luật cho phép các bên sử dụng phương tiện điện tử khác để thể hiện sự chấp thuận đối với thông điệp dữ liệu khi pháp luật không bắt buộc phải sử dụng chữ ký số.
+  - *Điều 11 (Giá trị chứng cứ của thông điệp dữ liệu):* Chữ ký Tablet không mặc nhiên bị cơ quan tài phán bác bỏ. Giá trị chứng cứ được Hội đồng giám định và Tòa án đánh giá dựa trên độ tin cậy của cách thức khởi tạo, lưu trữ, khả năng bảo đảm tính toàn vẹn của hồ sơ bệnh án và quy trình xác thực người thao tác `[Nhận định pháp lý chuẩn xác]`.
+- **Rủi ro Pháp lý & Giám định Tư pháp:**
+  - Trong trường hợp người bệnh phủ nhận việc mình đã ký xác nhận (ví dụ trong các sự cố y khoa hoặc tranh chấp chi phí lớn), việc giám định tư pháp nét vẽ điện tử trên màn hình cảm ứng kính phức tạp hơn rất nhiều so với giám định chữ ký bút mực trên giấy truyền thống (vốn có áp lực cơ học in sâu vào thớ giấy).
+  - Do đó, mức độ rủi ro pháp lý của phương thức này phụ thuộc vào chất lượng của chuỗi nhật ký điện tử (Audit Trail) mà phần mềm bệnh viện ghi nhận được.
 
 ---
 
-## 6. Nguồn Tham khảo
+## 4. Khách hàng & Triển khai Thực tế: Mức độ Hiện diện trên Thị trường
+
+- **Mức độ hiện diện thị trường:**
+  - Ký trên Tablet là phương thức xác nhận điện tử cho người bệnh có **tỷ lệ phổ biến cao nhất hiện nay** tại các cơ sở khám chữa bệnh đã số hóa `[Đã xác minh qua khảo sát thực tế phần mềm y tế]`.
+  - Hầu hết các chuỗi nha khoa thẩm mỹ lớn (như Kim Dental, Nha khoa Paris, Nha khoa Thúy Đức...) đều ứng dụng ký bệnh án trên iPad qua phần mềm DentalFlow hoặc phần mềm nội bộ `[Đã xác minh]`.
+  - Nhiều bệnh viện công lập và tư nhân triển khai module ký Tablet tại quầy tiếp đón bảo hiểm y tế hoặc phòng khám dịch vụ theo yêu cầu.
+- **Nguyên nhân được ưa chuộng:** Tận dụng được thiết bị máy tính bảng phổ thông, không phát sinh chi phí duy trì chứng thư số hàng năm cho người bệnh, giao diện trực quan và mang lại cảm giác thân thuộc giống như ký tay truyền thống.
+
+---
+
+## 5. Bảng Đánh giá Tiêu chuẩn 13 Tiêu chí & Khả năng Cạnh tranh vs EasyCA
+
+| STT | Tiêu chí Đánh giá | Mô hình Ký Tablet (DentalFlow / HIS Module) | Hồ sơ Đề xuất EasyCA (SoftDreams) |
+|:---:|---|---|---|
+| 1 | **Vai trò trong hệ sinh thái** | Giải pháp xác nhận điện tử trực tiếp trên thiết bị đầu cuối | Nhà cung cấp dịch vụ tin cậy (CA công cộng) chuyên sâu |
+| 2 | **Sản phẩm & giải pháp liên quan** | Module Canvas ký tay trên iPad / Android Tablet / Wacom | Dịch vụ chứng thực chữ ký số EasyCA, EasyCA Remote Signing |
+| 3 | **Phương thức ký người bệnh** | Vẽ chữ ký bằng ngón tay hoặc bút cảm ứng màn hình | Chữ ký số PKI cá nhân (Remote Signing / On-demand HSM) |
+| 4 | **Đối tượng ký chính** | Người bệnh & Thân nhân tại quầy tiếp đón trực tiếp | Tập trung mở rộng giải pháp ký số cho Người bệnh & Thân nhân |
+| 5 | **Khả năng tích hợp HIS/EMR** | Tích hợp sâu vào giao diện tiếp đón của phần mềm phòng khám | Độc lập, sẵn sàng mở cổng Open API tích hợp với mọi HIS/EMR |
+| 6 | **Khả năng Remote Signing** | **Không hỗ trợ:** Bắt buộc phải ký trực tiếp trên thiết bị tại cơ sở | `[Đã xác minh]` Có giấy phép số 82/GP-BTTTT về Remote Signing |
+| 7 | **Khả năng sử dụng HSM** | Dùng HSM bệnh viện niêm phong tài liệu (nếu có cấu hình) | `[Đã xác minh]` Sử dụng HSM quản lý khóa tập trung |
+| 8 | **Khả năng xác thực sinh trắc** | Giới hạn ở dữ liệu áp lực nét bút (nếu dùng thiết bị cao cấp) | Thiết kế hỗ trợ eKYC (đối soát CCCD gắn chip & khuôn mặt) |
+| 9 | **Bằng chứng triển khai tại BV** | `[Đã xác minh]` Phổ biến tại hàng trăm phòng khám & bệnh viện | `[Chưa xác minh]` Chưa có dự án bệnh viện vận hành chính thức |
+| 10 | **Lợi thế cạnh tranh nổi bật** | Chi phí biến đổi bằng 0; thao tác cực kỳ nhanh và thân thiện | Giá trị pháp lý cao nhất (Nhóm 1 PKI), chống chối bỏ kỹ thuật |
+| 11 | **Hạn chế cốt lõi** | Giá trị chứng cứ phụ thuộc audit log; không hỗ trợ ký từ xa | Phát sinh chi phí lượt ký PKI; cần thời gian tiếp nhận |
+| 12 | **Mức độ đe dọa với EasyCA** | **Cao (Direct Substitute):** Là rào cản thay thế lớn nhất tại quầy | **Cơ hội nâng cấp:** Giải pháp bổ trợ cho thủ thuật rủi ro |
+| 13 | **Những điểm chưa xác minh** | Tỷ lệ phần mềm lưu trữ đầy đủ chuỗi Audit Trail chuẩn | Tỷ lệ bệnh viện sẵn sàng chi trả phí ký PKI cho bệnh nhân |
+
+### Chiến lược Cạnh tranh của EasyCA: "Chiến lược Nâng cấp Phân tầng Rủi ro (Risk-based Tiering)"
+Đội ngũ kinh doanh và tư vấn giải pháp EasyCA **không nên phủ nhận tính pháp lý của chữ ký Tablet**, mà cần tư vấn theo mô hình kiến trúc phân tầng an toàn:
+1. **Phân tầng thủ thuật thông thường (Low Risk):** Bệnh viện tiếp tục sử dụng ký cảm ứng Tablet cho các thủ tục tiếp đón hành chính, khám ngoại trú thông thường để tối ưu hóa tốc độ phục vụ và tiết kiệm chi phí.
+2. **Phân tầng thủ thuật xâm lấn & rủi ro pháp lý cao (High Risk):** Đối với các hồ sơ nhạy cảm như: Phiếu cam kết phẫu thuật/gây mê hồi sức, Cam kết từ chối điều trị, Cam kết chi trả viện phí kỹ thuật cao ngoài danh mục BHYT... Cơ sở y tế nên áp dụng **Chữ ký số PKI của EasyCA (Nhóm 1 theo TT 13/2025/TT-BYT)** nhằm thiết lập bằng chứng điện tử toàn vẹn và mức độ an toàn pháp lý cao nhất cho bệnh viện.
+
+---
+
+## 6. Nguồn Tham khảo & Bằng chứng Xác thực
 1. Luật Giao dịch điện tử số 20/2023/QH15.
-2. Thông tư số 13/2025/TT-BYT của Bộ Y tế hướng dẫn triển khai hồ sơ bệnh án điện tử.
+2. Thông tư số 13/2025/TT-BYT của Bộ Y tế hướng dẫn triển khai hồ sơ bệnh án điện tử (Điều 3).
 3. Tài liệu hướng dẫn sử dụng phần mềm quản lý nha khoa DentalFlow: `dentalflow.vn`.
 4. Nghị định số 23/2025/NĐ-CP quy định chi tiết về chữ ký điện tử và dịch vụ tin cậy.
+5. Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP.

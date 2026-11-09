@@ -1,83 +1,97 @@
 ---
-title: "Viettel Solutions — Giải pháp Viettel HMS & Chữ ký số Y tế"
-vendor: "Tổng công ty Giải pháp Doanh nghiệp Viettel (Viettel Solutions - Tập đoàn Viettel)"
-product: "Hệ thống Quản lý Bệnh viện Viettel HMS & Dịch vụ chứng thực Viettel-CA"
-signing_method: "Ký cảm ứng trên Tablet & Xác thực qua VNeID / Viettel-CA"
-tt13_category: "Nhóm 3 (Phương tiện điện tử khác) & Nhóm 1 (Viettel-CA cho nhân viên y tế)"
-role: "Nhà cung cấp hạ tầng CNTT y tế, phần mềm HIS/EMR và CA công cộng"
+title: "Hồ sơ Đối thủ: Viettel Solutions — Hệ sinh thái Y tế Viettel HMS & Chữ ký số Viettel-CA"
+vendor: "Tổng công ty Giải pháp Doanh nghiệp Viettel (Viettel Solutions) — Tập đoàn Viettel"
+product: "Hệ thống Quản lý Bệnh viện Viettel HMS & Dịch vụ chứng thực Viettel-CA / Viettel SmartCA"
+signing_method: "Ký cảm ứng trên thiết bị Tablet & Xác thực qua VNeID; Ký số Viettel-CA cho nhân viên y tế"
+tt13_category: "Nhóm 3 (Xác nhận điện tử cho người bệnh) & Nhóm 1 (Viettel-CA cho nhân viên y tế)"
+role: "Nhà cung cấp hạ tầng viễn thông, phần mềm HIS/EMR và CA công cộng"
 last_updated: "2026-11-09"
+verification_status: "Đã xác minh năng lực CA và sự hiện diện của Viettel HMS tại nhiều cơ sở y tế công lập"
 ---
 
-# Viettel Solutions — Giải pháp Viettel HMS & Chữ ký số Y tế
-
----
-
-## 1. Thông tin Doanh nghiệp & Vị thế
-- **Tên pháp nhân:** Tổng công ty Giải pháp Doanh nghiệp Viettel (Viettel Solutions) — Chi nhánh Tập đoàn Công nghiệp - Viễn thông Quân đội `[Đã xác minh]`.
-- **Sản phẩm:** 
-  - Phần mềm quản lý thông tin bệnh viện (Viettel HMS), bệnh án điện tử (Viettel EMR).
-  - Dịch vụ chứng thực chữ ký số công cộng (Viettel-CA), chữ ký số từ xa Viettel SmartCA `[Đã xác minh]`.
-- **Vai trò trong chuỗi cung ứng Y tế:** Nhà thầu tổng thể về hạ tầng viễn thông, Trung tâm dữ liệu (Cloud), phần mềm quản trị bệnh viện (HIS/EMR) và nhà cấp dịch vụ tin cậy (CA) `[Đã xác minh]`.
-- **Quy mô thị phần:** Đơn vị sở hữu thị phần lớn nhất trong khối bệnh viện và trung tâm y tế công lập tuyến tỉnh, huyện tại Việt Nam thông qua các gói thầu CNTT y tế `[Đã xác minh qua Hệ thống Mạng đấu thầu Quốc gia]`.
+# Hồ sơ Đối thủ: Viettel Solutions — Hệ sinh thái Y tế Viettel HMS & Chữ ký số Viettel-CA
 
 ---
 
-## 2. Sản phẩm & Cơ chế Công nghệ trong Bệnh viện
+## 1. Thông tin Doanh nghiệp & Ba Vai trò trong Hệ sinh thái
 
-Trong hệ sinh thái y tế của Viettel, cần phân định rõ hai đối tượng ký riêng biệt:
+### 1.1 Thông tin Doanh nghiệp
+- **Tên doanh nghiệp:** Tổng công ty Giải pháp Doanh nghiệp Viettel (Viettel Solutions) — Chi nhánh Tập đoàn Công nghiệp - Viễn thông Quân đội `[Đã xác minh]`.
+- **Sản phẩm liên quan đến y tế:**
+  - Phần mềm Quản lý Bệnh viện (Viettel HMS), Bệnh án điện tử (Viettel EMR), Quản lý Trạm y tế (Viettel V-HMIS).
+  - Dịch vụ chứng thực chữ ký số công cộng (Viettel-CA), Dịch vụ ký số từ xa (Viettel SmartCA) `[Đã xác minh]`.
 
-### 2.1 Ký số cho Cán bộ Nhân viên Y tế (Bác sĩ, Dược sĩ, Điều dưỡng)
-- **Công nghệ:** Sử dụng **Viettel-CA** (USB Token hoặc Viettel SmartCA ký từ xa) để ký duyệt đơn thuốc điện tử, bệnh án điện tử, bảng kê thanh toán BHYT.
-- **Phân nhóm TT 13:** Thuộc **Nhóm 1: Chữ ký điện tử hợp pháp** `[Đã xác minh]`.
+### 1.2 Phân định Ba Vai trò Cốt lõi của Viettel trong Bệnh viện
+1. **Vai trò Nhà cung cấp Dịch vụ Tin cậy (CA Provider):** Cung cấp chứng thư số công cộng cho các cơ quan, tổ chức, cán bộ quản lý và nhân viên y tế (Bác sĩ, Dược sĩ, Điều dưỡng).
+2. **Vai trò Nhà phát triển Phần mềm Y tế (HIS/EMR Software Vendor):** Trực tiếp thiết kế và chuyển giao hệ thống phần mềm quản trị bệnh viện Viettel HMS phục vụ toàn bộ quy trình khám chữa bệnh lâm sàng.
+3. **Vai trò Nhà thầu Tích hợp Hệ thống (System Integrator):** Cung cấp trọn gói từ hạ tầng viễn thông (đường truyền cáp quang, mạng nội bộ), trung tâm dữ liệu đám mây (Cloud Datacenter), máy chủ, thiết bị bảo mật HSM đến các module ứng dụng không giấy tờ.
 
-### 2.2 Ký xác nhận của Bệnh nhân & Người nhà bệnh nhân
-Đối với đối tượng người bệnh, Viettel HMS hiện đang áp dụng các phương thức linh hoạt tùy theo gói triển khai tại từng cơ sở y tế:
-1. **Ký cảm ứng trên Tablet / Thiết bị di động (Phổ biến):**
-   - Điều dưỡng đưa máy tính bảng hoặc màn hình phụ tại quầy; bệnh nhân sử dụng bút cảm ứng hoặc ngón tay để vẽ chữ ký.
-   - *Cơ chế lưu trữ kỹ thuật:* Hệ thống ghi nhận nét vẽ chữ ký, lưu kèm các thông tin phiên làm việc (thời điểm ký, mã hồ sơ bệnh án, tài khoản nhân viên y tế lập phiếu).
-2. **Xác nhận qua tài khoản VNeID:**
-   - Tích hợp API cổng định danh Bộ Công An theo lộ trình chuyển đổi số Đề án 06 để người bệnh xác nhận một số mẫu phiếu qua ứng dụng di động `[Đang triển khai thí điểm tại một số đơn vị]`.
+---
+
+## 2. Sản phẩm & Cơ chế Công nghệ Thực tế trong Bệnh viện
+
+Trong hệ thống Viettel HMS, cần tách bạch cơ chế ký của hai đối tượng:
+
+### 2.1 Đối với Cán bộ, Nhân viên Y tế (Bác sĩ, Dược sĩ, Kế toán)
+- **Công nghệ áp dụng:** Sử dụng chữ ký số công cộng **Viettel-CA** (mô hình USB Token phần cứng hoặc Viettel SmartCA ký từ xa qua thiết bị di động/HSM).
+- **Phân nhóm TT 13:** Thuộc **Nhóm 1: Chữ ký điện tử hợp pháp** `[Đã xác minh qua hồ sơ nghiệm thu bệnh án điện tử tại các bệnh viện]`.
+
+### 2.2 Đối với Bệnh nhân & Người nhà bệnh nhân
+Đối với việc người bệnh xác nhận các phiếu cam kết phẫu thuật, thủ thuật, đơn thuốc hoặc bảng kê viện phí, Viettel HMS hỗ trợ các phương thức:
+1. **Ký cảm ứng trên máy tính bảng (Tablet Touch Signature):**
+   - *Cách thức vận hành:* Bệnh nhân hoặc người đại diện đọc nội dung văn bản trên máy tính bảng hoặc màn hình phụ; dùng bút cảm ứng hoặc ngón tay vẽ chữ ký lên vùng tiếp nhận chữ ký.
+   - *Cơ chế lưu trữ:* Hệ thống chụp lại nét vẽ (dạng ảnh đồ họa), gắn vào vị trí người bệnh ký trên tài liệu PDF và lưu trữ kèm theo các trường thông tin phiên làm việc (mã hồ sơ, thời gian ghi nhận, tài khoản nhân viên y tế phụ trách).
+2. **Xác nhận qua ứng dụng VNeID (Khả năng tích hợp theo Đề án 06):**
+   - Viettel Solutions có năng lực kết nối cổng định danh số của Bộ Công An để đẩy thông báo xác nhận văn bản sang thiết bị di động của người bệnh `[Có thông tin công bố tính năng kỹ thuật, mức độ vận hành thực tế tùy thuộc từng cơ sở y tế]`.
 
 ---
 
 ## 3. Căn cứ Pháp lý & Giá trị Chứng cứ
 
-- **Phân nhóm theo Thông tư 13/2025/TT-BYT đối với Người bệnh:**
-  - Thuộc **Nhóm 3: Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác** theo khoản 4 Điều 22 Luật Giao dịch điện tử số 20/2023/QH15.
-- **Căn cứ pháp lý áp dụng:**
-  - Luật Giao dịch điện tử số 20/2023/QH15 (Điều 8, Điều 11, Điều 22).
-  - Thông tư số 13/2025/TT-BYT (Điều 3).
-- **Đánh giá giá trị chứng cứ:**
-  - Phương thức ký cảm ứng trên Tablet của Viettel HMS được coi là một hình thức xác nhận điện tử hợp pháp nếu đáp ứng các điều kiện về việc thể hiện sự chấp thuận của chủ thể ký.
-  - *Mức độ tin cậy chứng cứ:* Phụ thuộc vào chất lượng gói dữ liệu kiểm toán (Audit Trail) được Viettel HMS lưu trữ kèm theo (nhật ký truy cập, địa chỉ thiết bị, thời gian tạo lập, cơ chế bảo vệ chống sửa đổi file sau khi ký). 
-  - Khi cơ sở y tế mong muốn nâng cao tính toàn vẹn và giá trị chứng minh pháp lý lên mức cao nhất (Nhóm 1), việc bổ sung giải pháp ký số PKI cho người bệnh là một hướng nâng cấp cần thiết `[Nhận định chuyên môn]`.
+### 3.1 Căn cứ theo Luật Giao dịch điện tử 2023 & Thông tư 13/2025/TT-BYT
+- **Phân nhóm theo Thông tư 13/2025/TT-BYT:** 
+  - Phương thức người bệnh ký cảm ứng trên Tablet hoặc xác nhận qua VNeID thuộc **Nhóm 3: Sử dụng các hình thức xác nhận bằng phương tiện điện tử khác** theo khoản 4 Điều 22 Luật Giao dịch điện tử số 20/2023/QH15.
+- **Giá trị chứng cứ theo Điều 11 Luật GDĐT 2023:**
+  - Chữ ký cảm ứng trên Tablet của Viettel HMS được công nhận giá trị pháp lý là một hình thức thể hiện sự chấp thuận bằng phương tiện điện tử theo thỏa thuận.
+  - *Mức độ tin cậy chứng minh:* Khi có khiếu nại hoặc tranh chấp y khoa, cơ quan tố tụng sẽ xem xét tính toàn vẹn của hồ sơ dựa trên việc Bệnh viện có bảo đảm tài liệu không bị can thiệp sau thời điểm ký hay không và chuỗi nhật ký phiên làm việc có đủ độ tin cậy để xác định chính người bệnh đã thao tác hay không `[Nhận định pháp lý khách quan]`.
+
+### 3.2 Tuân thủ Luật Bảo vệ Dữ liệu Cá nhân
+- **Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP:**
+  - Toàn bộ hồ sơ bệnh án điện tử lưu trữ trên hạ tầng Viettel Cloud thuộc phạm vi **dữ liệu cá nhân nhạy cảm liên quan đến sức khỏe** (Điều 26 Luật 91/2025/QH15).
+  - Bệnh viện và Viettel Solutions phải có các biện pháp quản trị an toàn thông tin cấp độ 3 trở lên, mã hóa đường truyền và phân quyền truy cập chặt chẽ để chống rò rỉ dữ liệu y tế.
 
 ---
 
-## 4. Khách hàng & Triển khai Thực tế
-- Viettel HMS đang được vận hành tại hàng trăm cơ sở y tế công lập, bao gồm các bệnh viện đa khoa tuyến tỉnh, bệnh viện chuyên khoa và trung tâm y tế quận/huyện trên phạm vi toàn quốc `[Đã xác minh qua các thông báo trúng thầu và bài viết triển khai trên truyền thông chính thức của Viettel]`.
-- Mức độ triển khai các module không giấy tờ (ký điện tử người bệnh) khác nhau tùy thuộc vào mức độ sẵn sàng hạ tầng và quyết định đầu tư của từng bệnh viện.
+## 4. Khách hàng & Triển khai Thực tế: Mức độ Hiện diện trên Thị trường
+- **Mức độ hiện diện thị trường:** Viettel Solutions có độ phủ rộng tại khối y tế công lập, bao gồm nhiều bệnh viện đa khoa tuyến tỉnh, bệnh viện chuyên khoa và trung tâm y tế quận/huyện `[Đã xác minh qua các kết quả trúng thầu công khai trên Hệ thống Mạng đấu thầu Quốc gia]`.
+  *(Lưu ý nghiên cứu: Không khẳng định Viettel nắm thị phần lớn nhất tuyệt đối do thiếu dữ liệu thống kê độc lập toàn diện phân tách giữa các nhà thầu VNPT, Viettel và FPT)*.
+- **Tình trạng vận hành chữ ký số bệnh nhân:** Tại các cơ sở y tế triển khai Viettel HMS, phương thức phổ biến nhất hiện nay cho người bệnh vẫn là ký cảm ứng trên Tablet hoặc ký giấy truyền thống rồi scan hồ sơ; việc cấp chứng thư chữ ký số PKI cá nhân trực tiếp cho người bệnh chưa được triển khai diện rộng `[Nhận định dựa trên khảo sát thực tế quy trình lâm sàng]`.
 
 ---
 
-## 5. Đánh giá Cạnh tranh vs EasyCA
+## 5. Bảng Đánh giá Tiêu chuẩn 13 Tiêu chí & Khả năng Cạnh tranh vs EasyCA
 
-### 5.1 Điểm mạnh của Viettel
-- **Thế mạnh độc quyền về hạ tầng:** Viettel thường cung cấp trọn gói từ đường truyền internet, hạ tầng mạng nội bộ, máy chủ đám mây (Cloud Server) cho đến phần mềm quản lý bệnh viện.
-- **Mạng lưới hỗ trợ kỹ thuật phủ kín 63 tỉnh/thành:** Đội ngũ kỹ sư tại các chi nhánh Viettel tỉnh/huyện có khả năng ứng cứu và hỗ trợ vận hành trực tiếp tại chỗ rất nhanh chóng.
-
-### 5.2 Điểm yếu & Thách thức
-- **Bộ máy lớn, quy trình thay đổi chậm:** Việc bổ sung hoặc tùy biến sâu các tính năng chuyên biệt mới (như luồng cấp chứng thư số theo sự vụ cho người bệnh) đòi hỏi quy trình phê duyệt nội bộ phức tạp.
-- **Chưa chuyên biệt hóa mảng CKS Bệnh nhân:** Trọng tâm của Viettel-CA vẫn là thị trường doanh nghiệp và nhân viên y tế; chưa đóng gói một sản phẩm ký số chuyên dụng cho người bệnh vãng lai.
-
-### 5.3 Cơ hội Hợp tác & Cạnh tranh cho EasyCA
-- **Không cạnh tranh trực tiếp thay thế Viettel HMS:** Đội ngũ kinh doanh EasyCA không nên định vị thay thế phần mềm bệnh viện của Viettel vì đây là hợp đồng hạ tầng tổng thể.
-- **Chiến lược đối tác tích hợp (Add-on Module):** Đề xuất EasyCA dưới dạng **Module Ký số PKI Chuyên sâu** tích hợp vào hệ thống Viettel HMS qua API mở, giúp bệnh viện nâng cấp phương thức ký của người bệnh từ Nhóm 3 lên Nhóm 1 theo Thông tư 13/2025/TT-BYT.
+| STT | Tiêu chí Đánh giá | Hồ sơ Viettel (Viettel HMS / Viettel-CA) | Hồ sơ Đề xuất EasyCA (SoftDreams) |
+|:---:|---|---|---|
+| 1 | **Vai trò trong hệ sinh thái** | Nhà thầu hạ tầng tổng thể, HIS/EMR vendor & CA công cộng | Nhà cung cấp dịch vụ tin cậy (CA công cộng) chuyên sâu |
+| 2 | **Sản phẩm & giải pháp liên quan** | Viettel HMS, Viettel EMR, Viettel-CA, Viettel SmartCA | Dịch vụ chứng thực chữ ký số EasyCA, EasyCA Remote Signing |
+| 3 | **Phương thức ký người bệnh** | Ký cảm ứng trên Tablet (phổ biến) & Thử nghiệm VNeID | Chữ ký số PKI cá nhân (Remote Signing / HSM) |
+| 4 | **Đối tượng ký chính** | Nhân viên y tế (Viettel-CA) & Người bệnh (Tablet/VNeID) | Tập trung mở rộng giải pháp ký số cho Người bệnh & Thân nhân |
+| 5 | **Khả năng tích hợp HIS/EMR** | Tích hợp sẵn trong phần mềm Viettel HMS | Độc lập, sẵn sàng mở cổng Open API tích hợp với mọi HIS |
+| 6 | **Khả năng Remote Signing** | `[Đã xác minh]` Có nền tảng Viettel SmartCA cho cán bộ y tế | `[Đã xác minh]` Có giấy phép số 82/GP-BTTTT về Remote Signing |
+| 7 | **Khả năng sử dụng HSM** | `[Đã xác minh]` Sử dụng HSM quản lý khóa tập trung | `[Đã xác minh]` Sử dụng HSM quản lý khóa tập trung |
+| 8 | **Khả năng xác thực sinh trắc** | Hỗ trợ qua thiết bị di động / VNeID | Thiết kế hỗ trợ eKYC (đối soát CCCD gắn chip & khuôn mặt) |
+| 9 | **Bằng chứng triển khai tại BV** | `[Đã xác minh]` Hiện diện tại nhiều cơ sở y tế công lập | `[Chưa xác minh]` Chưa có dự án bệnh viện vận hành chính thức |
+| 10 | **Lợi thế cạnh tranh nổi bật** | Hạ tầng viễn thông toàn diện, đội ngũ kỹ thuật tại 63 tỉnh/thành | Tính trung lập, tập trung giải quyết bài toán nghiệp vụ người bệnh |
+| 11 | **Hạn chế cốt lõi** | Quy trình thay đổi tính năng chậm; chưa tối ưu gói ký người bệnh | Thiếu hệ sinh thái phần mềm bệnh viện sẵn có tại cơ sở y tế |
+| 12 | **Mức độ đe dọa với EasyCA** | **Cao (Direct & Indirect Threat):** Nếu Viettel tự đóng gói ký số PKI người bệnh | **Cơ hội hợp tác:** Đề xuất làm đối tác tích hợp bổ trợ |
+| 13 | **Những điểm chưa xác minh** | Tỷ lệ bệnh viện sử dụng module ký Tablet so với ký giấy | Khả năng chấp nhận chi phí lượt ký PKI của các bệnh viện |
 
 ---
 
-## 6. Nguồn Tham khảo
-1. Hệ thống Mạng đấu thầu Quốc gia (muasamcong.mpi.gov.vn) — Các gói thầu triển khai phần mềm quản lý bệnh viện Viettel HMS.
+## 6. Nguồn Tham khảo & Bằng chứng Xác thực
+1. Hệ thống Mạng đấu thầu Quốc gia (`muasamcong.mpi.gov.vn`) — Các quyết định phê duyệt kết quả lựa chọn nhà thầu liên quan đến Viettel Solutions trong ngành y tế.
 2. Website chính thức Tổng công ty Giải pháp Doanh nghiệp Viettel: `viettelsolutions.com.vn`.
-3. Website dịch vụ Chữ ký số Viettel: `viettel-ca.vn`.
-4. Thông tư số 13/2025/TT-BYT của Bộ Y tế hướng dẫn hồ sơ bệnh án điện tử.
+3. Website dịch vụ Chữ ký số Viettel-CA: `viettel-ca.vn`.
+4. Luật Giao dịch điện tử số 20/2023/QH15 và Thông tư số 13/2025/TT-BYT.
+5. Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định số 356/2025/NĐ-CP.
